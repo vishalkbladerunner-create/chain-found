@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 600" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <!-- Deep slate gradient -->
+    <linearGradient id="vg-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="45%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0c1420"/>
+    </linearGradient>
+
+    <!-- Emerald growth glow -->
+    <radialGradient id="vg-emerald" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Cyan accent glow -->
+    <radialGradient id="vg-cyan" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Growth line gradient -->
+    <linearGradient id="vg-line" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0"/>
+      <stop offset="20%" stop-color="#10b981" stop-opacity="0.5"/>
+      <stop offset="80%" stop-color="#06b6d4" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Bar gradient -->
+    <linearGradient id="vg-bar" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0.15"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Base dark slate background -->
+  <rect width="1920" height="600" fill="url(#vg-bg)"/>
+
+  <!-- Large ambient glow orbs -->
+  <circle cx="300" cy="450" r="400" fill="url(#vg-emerald)"/>
+  <circle cx="1700" cy="150" r="350" fill="url(#vg-cyan)"/>
+  <circle cx="960" cy="100" r="280" fill="url(#vg-emerald)" opacity="0.6"/>
+
+  <!-- Upward trending growth lines -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Main growth curve 1 -->
+    <path d="M 0 480 Q 300 420 500 350 T 1000 280 T 1500 200 L 1920 120" stroke="url(#vg-line)" stroke-width="3" opacity="0.6"/>
+    <path d="M 0 500 Q 300 440 500 370 T 1000 300 T 1500 220 L 1920 140" stroke="url(#vg-line)" stroke-width="2" opacity="0.35"/>
+
+    <!-- Main growth curve 2 (upper) -->
+    <path d="M 200 380 Q 500 320 800 260 T 1300 180 T 1700 100" stroke="#10b981" stroke-width="2.5" opacity="0.25"/>
+    <path d="M 200 400 Q 500 340 800 280 T 1300 200 T 1700 120" stroke="#06b6d4" stroke-width="1.5" opacity="0.2"/>
+
+    <!-- Secondary growth curve -->
+    <path d="M 100 520 Q 400 480 700 400 T 1200 300 T 1600 220 L 1920 160" stroke="#10b981" stroke-width="2" opacity="0.2"/>
+  </g>
+
+  <!-- Abstract bar chart shapes (rising) -->
+  <g fill="url(#vg-bar)" stroke="#10b981" stroke-width="0.8" opacity="0.4">
+    <rect x="180" y="380" width="30" height="120" rx="2"/>
+    <rect x="230" y="340" width="30" height="160" rx="2"/>
+    <rect x="280" y="300" width="30" height="200" rx="2"/>
+    <rect x="330" y="360" width="30" height="140" rx="2"/>
+    <rect x="380" y="260" width="30" height="240" rx="2"/>
+    <rect x="430" y="220" width="30" height="280" rx="2"/>
+  </g>
+
+  <!-- Small bar chart right side -->
+  <g fill="url(#vg-bar)" stroke="#06b6d4" stroke-width="0.7" opacity="0.3">
+    <rect x="1480" y="420" width="22" height="80" rx="2"/>
+    <rect x="1512" y="380" width="22" height="120" rx="2"/>
+    <rect x="1544" y="340" width="22" height="160" rx="2"/>
+    <rect x="1576" y="400" width="22" height="100" rx="2"/>
+    <rect x="1608" y="320" width="22" height="180" rx="2"/>
+    <rect x="1640" y="280" width="22" height="220" rx="2"/>
+  </g>
+
+  <!-- Arrowheads on growth lines -->
+  <g fill="#10b981" opacity="0.4">
+    <polygon points="1920,120 1905,115 1905,125"/>
+    <polygon points="1700,100 1685,95 1685,105"/>
+    <polygon points="1920,160 1905,155 1905,165"/>
+  </g>
+
+  <!-- Circular milestone nodes on growth path -->
+  <g fill="#10b981" opacity="0.35">
+    <circle cx="500" cy="350" r="6"/>
+    <circle cx="1000" cy="280" r="8"/>
+    <circle cx="1500" cy="200" r="7"/>
+    <circle cx="800" cy="260" r="5"/>
+    <circle cx="1300" cy="180" r="6"/>
+  </g>
+
+  <!-- Node halos -->
+  <g fill="none" stroke="#10b981" stroke-width="1" opacity="0.15">
+    <circle cx="500" cy="350" r="18"/>
+    <circle cx="1000" cy="280" r="22"/>
+    <circle cx="1500" cy="200" r="20"/>
+  </g>
+
+  <!-- Floating geometric shapes (growth blocks) -->
+  <g fill="#1e293b" stroke="#10b981" stroke-width="0.6" opacity="0.3">
+    <rect x="650" y="160" width="35" height="35" transform="rotate(20 667 177)"/>
+    <rect x="720" y="200" width="28" height="28" transform="rotate(-15 734 214)"/>
+    <rect x="1100" y="380" width="32" height="32" transform="rotate(25 1116 396)"/>
+    <rect x="1180" y="420" width="24" height="24" transform="rotate(-10 1192 432)"/>
+  </g>
+
+  <!-- Grid lines (market chart grid) -->
+  <g stroke="#10b981" stroke-width="0.4" fill="none" opacity="0.06">
+    <line x1="0" y1="200" x2="1920" y2="200"/>
+    <line x1="0" y1="300" x2="1920" y2="300"/>
+    <line x1="0" y1="400" x2="1920" y2="400"/>
+    <line x1="0" y1="500" x2="1920" y2="500"/>
+    <line x1="400" y1="0" x2="400" y2="600"/>
+    <line x1="800" y1="0" x2="800" y2="600"/>
+    <line x1="1200" y1="0" x2="1200" y2="600"/>
+    <line x1="1600" y1="0" x2="1600" y2="600"/>
+  </g>
+
+  <!-- Dashed trend channel lines -->
+  <path d="M 0 450 Q 400 380 800 310 T 1600 180" stroke="#10b981" stroke-width="1" fill="none" opacity="0.1" stroke-dasharray="8 6"/>
+  <path d="M 0 520 Q 400 450 800 380 T 1600 250" stroke="#06b6d4" stroke-width="1" fill="none" opacity="0.08" stroke-dasharray="8 6"/>
+
+  <!-- Sparkle dots scattered -->
+  <g fill="#10b981" opacity="0.25">
+    <circle cx="100" cy="200" r="2.5"/>
+    <circle cx="450" cy="120" r="2"/>
+    <circle cx="600" cy="450" r="3"/>
+    <circle cx="900" cy="150" r="2"/>
+    <circle cx="1050" cy="500" r="2.5"/>
+    <circle cx="1350" cy="250" r="3"/>
+    <circle cx="1450" cy="480" r="2"/>
+    <circle cx="1750" cy="350" r="2.5"/>
+    <circle cx="1850" cy="200" r="2"/>
+    <circle cx="250" cy="550" r="3"/>
+    <circle cx="750" cy="520" r="2"/>
+  </g>
+
+  <!-- Small accent diamonds (growth points) -->
+  <g fill="#06b6d4" opacity="0.15">
+    <polygon points="550,450 560,460 550,470 540,460"/>
+    <polygon points="850,420 862,432 850,444 838,432"/>
+    <polygon points="1250,380 1260,390 1250,400 1240,390"/>
+    <polygon points="1550,320 1562,332 1550,344 1538,332"/>
+  </g>
+
+  <!-- Subtle ring accents -->
+  <g fill="none" stroke="#10b981" stroke-width="0.8" opacity="0.08">
+    <circle cx="700" cy="350" r="60"/>
+    <circle cx="700" cy="350" r="85"/>
+    <circle cx="1400" cy="280" r="55"/>
+    <circle cx="1400" cy="280" r="78"/>
+  </g>
+</svg>
