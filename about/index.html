@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>About ChainFoundry</title>
-  <meta name="description" content="Learn about ChainFoundry — the execution layer for token-native companies.">
+  <title>About | ChainFoundry</title>
+  <meta name="description" content="About ChainFoundry — the execution layer for token-native companies. Learn our story, mission, and the team building the future of on-chain business.">
   <link rel="icon" type="image/svg+xml" href="../cf_logo.svg">
   <link rel="stylesheet" href="../css/main.css">
 </head>
@@ -154,7 +154,7 @@
           <a href="../index.html" class="mega-menu__logo">ChainFoundry</a>
         </div>
         <nav class="mega-menu__nav" aria-label="Mobile">
-          <button class="mega-menu__item is-active" data-panel="foundry">
+          <button class="mega-menu__item" data-panel="foundry">
             The Foundry
             <svg class="mega-menu__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
           </button>
@@ -173,7 +173,7 @@
             Insights
             <svg class="mega-menu__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
           </button>
-          <button class="mega-menu__item" data-panel="about">
+          <button class="mega-menu__item is-active" data-panel="about">
             About
             <svg class="mega-menu__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
           </button>
@@ -191,7 +191,7 @@
       </div>
 
       <div class="mega-menu__panel" id="mega-menu-panel">
-        <div class="mega-panel is-active" id="panel-foundry">
+        <div class="mega-panel" id="panel-foundry">
           <a href="../foundry/index.html" class="mega-panel__header">
             The Foundry
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
@@ -245,7 +245,7 @@
             <a href="../insights/index.html" class="mega-panel__link">Podcasts</a>
           </div>
         </div>
-        <div class="mega-panel" id="panel-about">
+        <div class="mega-panel is-active" id="panel-about">
           <a href="../about/index.html" class="mega-panel__header">
             About
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
@@ -262,40 +262,150 @@
 
   <main id="main-content">
 
-    <!-- ==================== HERO ==================== -->
-    <section class="hero">
-      <div class="hero__inner">
-        <div class="hero__content" style="text-align:center;max-width:720px;margin:0 auto;padding:80px 20px;">
-          <h1 class="hero__headline">About ChainFoundry</h1>
-          <p class="hero__subheadline">The execution layer for token-native companies. We build, launch and scale on-chain businesses that shape the future of finance.</p>
-        </div>
+    <!-- ==================== BANNER ==================== -->
+    <section class="cf-about-banner">
+      <div class="cf-about-banner__svg" aria-hidden="true">
+        <img src="../cf-images/cf_banner_about.svg" alt="" />
       </div>
-    </section>
-
-    <!-- ==================== PLACEHOLDER CONTENT ==================== -->
-    <section class="section section--gray">
       <div class="container">
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;">
-          <div>
-            <h2 class="section__title" style="text-align:left;margin-bottom:16px;color:var(--blue);">Our Story</h2>
-            <p style="font-size:1.05rem;color:var(--gray-text);line-height:1.6;margin-bottom:24px;">ChainFoundry was founded with a simple belief: the next generation of world-changing companies will be built on-chain. We exist to make that transition seamless, strategic, and scalable.</p>
-            <a href="#" class="card__cta">
-              Meet the team
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
+        <p class="cf-about-banner__eyebrow">About</p>
+        <h1 class="cf-about-banner__title">The Execution Layer<br>for the <em>On-Chain Era.</em></h1>
+        <p class="cf-about-banner__sub">ChainFoundry was founded with a simple belief: the next generation of world-changing companies will be built on-chain. We exist to make that transition seamless, strategic, and scalable.</p>
+      </div>
+    </section>
+
+    <!-- ==================== OUR STORY ==================== -->
+    <section class="section cf-pp-section--white">
+      <div class="container">
+        <div class="cf-about-story">
+          <div class="cf-about-story__text">
+            <p class="cf-eyebrow">Our Story</p>
+            <h2>Built by Operators.<br>Designed to Scale.</h2>
+            <p>ChainFoundry started as a small team of crypto operators who had shipped Top-80 protocols, run launches, and managed treasuries through every market cycle since 2017. We saw a gap: great Web2 businesses with real revenue had no path to becoming liquidity-ready Web3 products.</p>
+            <p>So we built one. The Foundry is our integrated engine — engineering, design, tokenomics, legal, and distribution all under one roof. One shared stack. One repeatable process. Twelve weeks from concept to launch.</p>
+            <p>Today, we have 12+ products in market, $40M+ under management, and a 100k+ ecosystem of operators, builders, and allocators who activate on every launch.</p>
           </div>
-          <div style="border-radius:4px;overflow:hidden;">
-            <img src="../cf-images/cf_hero_team.jpg" alt="ChainFoundry team" style="width:100%;aspect-ratio:16/10;object-fit:cover;">
+          <div class="cf-about-story__img">
+            <img src="../cf-images/cf_hero_team.jpg" alt="ChainFoundry team">
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container" style="text-align:center;max-width:800px;">
-        <p class="section__eyebrow" style="margin-bottom:16px;">What we do</p>
-        <h2 class="section__title" style="margin-bottom:24px;color:var(--blue);">Building the future, block by block</h2>
-        <p style="font-size:1.05rem;color:var(--gray-text);line-height:1.6;">From tokenomics design to go-to-market execution, we partner with visionary founders to turn ambitious ideas into thriving token-native enterprises.</p>
+    <!-- ==================== MISSION & VALUES ==================== -->
+    <section class="section cf-pp-section--tint">
+      <div class="container">
+        <div class="cf-section-head" style="text-align:center;margin-bottom:16px;">
+          <p class="cf-eyebrow">Principles</p>
+          <h2>How We Work</h2>
+        </div>
+        <div class="cf-about-values">
+          <div class="cf-about-value">
+            <div class="cf-about-value__num">01</div>
+            <h3>Execution First</h3>
+            <p>Strategy without shipping is just theory. We measure ourselves by products launched, treasuries managed, and markets entered.</p>
+          </div>
+          <div class="cf-about-value">
+            <div class="cf-about-value__num">02</div>
+            <h3>Shared Infrastructure</h3>
+            <p>Every product inherits the same engineering stack, legal framework, and distribution network. Build once, benefit forever.</p>
+          </div>
+          <div class="cf-about-value">
+            <div class="cf-about-value__num">03</div>
+            <h3>Liquidity From Day One</h3>
+            <p>Token design, market-making, and exchange relationships are not afterthoughts. They are engineered into the product from the first sprint.</p>
+          </div>
+          <div class="cf-about-value">
+            <div class="cf-about-value__num">04</div>
+            <h3>Operator-Led</h3>
+            <p>Our team has shipped protocols, run treasuries, and survived bear markets. We advise from experience, not theory.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== MILESTONES ==================== -->
+    <section class="section cf-pp-section--white">
+      <div class="container">
+        <div class="cf-section-head" style="text-align:center;margin-bottom:16px;">
+          <p class="cf-eyebrow">Timeline</p>
+          <h2>Our Journey</h2>
+        </div>
+        <div class="cf-about-timeline">
+          <div class="cf-about-timeline__item">
+            <div class="cf-about-timeline__year">2017</div>
+            <div class="cf-about-timeline__text">
+              <h4>The Beginning</h4>
+              <p>Core team ships first protocol and begins operating in crypto markets through multiple cycles.</p>
+            </div>
+          </div>
+          <div class="cf-about-timeline__item">
+            <div class="cf-about-timeline__year">2019</div>
+            <div class="cf-about-timeline__text">
+              <h4>Advisory Practice</h4>
+              <p>Launch institutional advisory for token design, treasury management, and go-to-market strategy.</p>
+            </div>
+          </div>
+          <div class="cf-about-timeline__item">
+            <div class="cf-about-timeline__year">2021</div>
+            <div class="cf-about-timeline__text">
+              <h4>The Foundry</h4>
+              <p>Formalize the venture factory model — shared stack, shared talent, 12-week sprint to launch.</p>
+            </div>
+          </div>
+          <div class="cf-about-timeline__item">
+            <div class="cf-about-timeline__year">2024</div>
+            <div class="cf-about-timeline__text">
+              <h4>Portfolio Growth</h4>
+              <p>4 products live, $40M AUM, 50k+ ecosystem members. Expand to Dubai and Singapore.</p>
+            </div>
+          </div>
+          <div class="cf-about-timeline__item">
+            <div class="cf-about-timeline__year">2026</div>
+            <div class="cf-about-timeline__text">
+              <h4>Execution Era</h4>
+              <p>12+ products in market, 100k+ ecosystem, 4x average launch velocity. The on-chain economy accelerates.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== STATS ==================== -->
+    <section class="cf-about-metrics">
+      <div class="container">
+        <div class="cf-about-metrics__grid">
+          <div class="cf-about-metric">
+            <div class="cf-about-metric__num">2017</div>
+            <div class="cf-about-metric__label">Year founded</div>
+          </div>
+          <div class="cf-about-metric">
+            <div class="cf-about-metric__num">12+</div>
+            <div class="cf-about-metric__label">Products launched</div>
+          </div>
+          <div class="cf-about-metric">
+            <div class="cf-about-metric__num">$40M+</div>
+            <div class="cf-about-metric__label">Assets managed</div>
+          </div>
+          <div class="cf-about-metric">
+            <div class="cf-about-metric__num">100k+</div>
+            <div class="cf-about-metric__label">Ecosystem members</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CTA ==================== -->
+    <section class="cf-about-cta">
+      <div class="container">
+        <div class="cf-about-cta__content">
+          <h2>Want to build with us?</h2>
+          <p>Whether you're a founder with a vision, an allocator seeking exposure, or an operator looking to join the team — we'd love to hear from you.</p>
+          <div class="cf-about-cta__btns">
+            <a href="#" class="cf-ab-btn-primary">Contact Us</a>
+            <a href="../foundry/index.html" class="cf-ab-btn-secondary">Explore The Foundry</a>
+          </div>
+        </div>
       </div>
     </section>
 
