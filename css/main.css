@@ -282,6 +282,33 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .header-search-btn svg {
   width: 22px; height: 22px;
 }
+/* Light header variant (non-home pages) */
+.site-header.header--light {
+  background: var(--white);
+  color: var(--navy);
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+.site-header.header--light .site-logo {
+  filter: none;
+}
+.site-header.header--light .desktop-nav__link {
+  color: var(--navy);
+}
+.site-header.header--light .desktop-nav__link:hover,
+.site-header.header--light .desktop-nav__item:hover > .desktop-nav__link {
+  border-bottom-color: var(--blue);
+}
+.site-header.header--light .header-auth,
+.site-header.header--light .header-auth a {
+  color: var(--navy);
+}
+.site-header.header--light .header-search-btn {
+  color: var(--navy);
+}
+.site-header.header--light .hamburger span {
+  background: var(--navy);
+}
+
 @media (max-width: 1024px) {
   .desktop-nav { display: none; }
   .header-auth span { display: none; }
