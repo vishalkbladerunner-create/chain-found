@@ -95,8 +95,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
    HEADER — DO NOT TOUCH. PERFECT AS-IS.
    ============================================================ */
 .site-header {
-  position: fixed;
-  top: 0; left: 0; right: 0;
+  position: relative;
   height: var(--header-height);
   background: var(--navy);
   color: var(--white);
@@ -693,7 +692,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   z-index: 3;
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: calc(var(--header-height) + 60px) 40px 80px;
+  padding: 60px 40px 80px;
   text-align: center;
   width: 100%;
 }
@@ -947,7 +946,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   justify-content: space-between;
   gap: 48px;
   margin-bottom: 64px;
-  padding-top: calc(var(--header-height) + 12px);
+  padding-top: 12px;
 }
 .podcast-hero__text {
   max-width: 720px;
@@ -2104,7 +2103,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .portfolio-hero {
   position: relative;
   background: var(--navy);
-  padding: calc(var(--header-height) + 120px) 0 100px;
+  padding: 120px 0 100px;
   overflow: hidden;
   text-align: center;
 }
@@ -2236,7 +2235,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
 @media (max-width: 768px) {
   .portfolio-grid { grid-template-columns: 1fr; }
-  .portfolio-hero { padding: calc(var(--header-height) + 80px) 0 64px; }
+  .portfolio-hero { padding: 80px 0 64px; }
 }
 
 /* ============================================================
