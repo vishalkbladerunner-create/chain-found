@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bsBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0A1428"/>
+      <stop offset="55%" stop-color="#1A2B52"/>
+      <stop offset="100%" stop-color="#2A1810"/>
+    </linearGradient>
+    <linearGradient id="bsTrail" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FF6B3D" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#FF6B3D" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#FFD89F" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="bsTrail2" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FF3D6B" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#FFB089" stop-opacity="0.7"/>
+    </linearGradient>
+    <radialGradient id="bsGlow" cx="0.85" cy="0.15" r="0.6">
+      <stop offset="0%" stop-color="#FFB089" stop-opacity="0.55"/>
+      <stop offset="60%" stop-color="#FF6B3D" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#FF6B3D" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="bsGrid" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M80 0 L0 0 0 80" fill="none" stroke="#FFFFFF" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bsBg)"/>
+  <rect width="1600" height="900" fill="url(#bsGrid)"/>
+  <rect width="1600" height="900" fill="url(#bsGlow)"/>
+  <!-- diagonal launch trails sweeping bottom-left to top-right -->
+  <g opacity="0.85">
+    <path d="M-100 950 Q 600 700 900 400 T 1700 -50" stroke="url(#bsTrail)" stroke-width="3" fill="none" opacity="0.9"/>
+    <path d="M-100 1000 Q 700 720 1000 380 T 1750 -100" stroke="url(#bsTrail2)" stroke-width="2" fill="none" opacity="0.65"/>
+    <path d="M-100 880 Q 500 660 850 320 T 1700 -200" stroke="url(#bsTrail)" stroke-width="1.5" fill="none" opacity="0.55"/>
+    <path d="M-100 1050 Q 800 780 1100 420 T 1800 0" stroke="url(#bsTrail2)" stroke-width="1" fill="none" opacity="0.45"/>
+  </g>
+  <!-- particle dots near the trails -->
+  <g fill="#FFD89F" opacity="0.7">
+    <circle cx="1380" cy="180" r="3"/>
+    <circle cx="1450" cy="120" r="2"/>
+    <circle cx="1520" cy="80" r="2.5"/>
+    <circle cx="1280" cy="240" r="2"/>
+    <circle cx="1180" cy="320" r="1.5"/>
+  </g>
+  <!-- subtle horizontal scan lines for tech feel -->
+  <g stroke="#3D6BFF" stroke-opacity="0.04" stroke-width="1">
+    <line x1="0" y1="200" x2="1600" y2="200"/>
+    <line x1="0" y1="400" x2="1600" y2="400"/>
+    <line x1="0" y1="600" x2="1600" y2="600"/>
+    <line x1="0" y1="800" x2="1600" y2="800"/>
+  </g>
+</svg>

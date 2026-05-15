@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFF6D4"/>
+      <stop offset="55%" stop-color="#FFE066"/>
+      <stop offset="100%" stop-color="#FFB347"/>
+    </linearGradient>
+    <radialGradient id="spot" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="haloRight" cx="0.5" cy="0.5" r="0.55">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.7"/>
+      <stop offset="60%" stop-color="#FFFFFF" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <g id="duck">
+      <ellipse cx="60" cy="78" rx="52" ry="40" fill="currentColor"/>
+      <circle cx="92" cy="46" r="30" fill="currentColor"/>
+      <path d="M118,44 Q138,46 142,52 Q138,60 118,58 Z" fill="#FF8A2A"/>
+      <circle cx="100" cy="40" r="4.2" fill="#1A1A1A"/>
+      <path d="M52,82 Q72,98 96,90 Q78,108 52,102 Z" fill="rgba(0,0,0,0.07)"/>
+    </g>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <g fill="none" stroke="rgba(255,255,255,0.45)" stroke-width="1.5">
+    <circle cx="1180" cy="450" r="160"/>
+    <circle cx="1180" cy="450" r="240"/>
+    <circle cx="1180" cy="450" r="330"/>
+    <circle cx="1180" cy="450" r="430"/>
+    <circle cx="1180" cy="450" r="540"/>
+  </g>
+  <ellipse cx="1180" cy="450" rx="380" ry="320" fill="url(#haloRight)"/>
+  <ellipse cx="780" cy="320" rx="420" ry="260" fill="url(#spot)"/>
+  <g stroke="rgba(45,108,235,0.18)" stroke-width="1.2" fill="none">
+    <path d="M0,820 Q200,800 400,820 T800,820 T1200,820 T1600,820"/>
+    <path d="M0,855 Q200,840 400,855 T800,855 T1200,855 T1600,855"/>
+  </g>
+  <g color="#FFD93B" opacity="0.18">
+    <use href="#duck" transform="translate(70,520) scale(2.4) rotate(-8 60 60)"/>
+    <use href="#duck" transform="translate(1320,80) scale(1.8) rotate(12 60 60)"/>
+  </g>
+  <g color="#FFC107" opacity="0.16">
+    <use href="#duck" transform="translate(360,40) scale(1.6) rotate(-18 60 60)"/>
+    <use href="#duck" transform="translate(1100,650) scale(2.0) rotate(8 60 60)"/>
+  </g>
+  <g color="#FFB300" opacity="0.42">
+    <use href="#duck" transform="translate(180,180) scale(0.9) rotate(-12 60 60)"/>
+    <use href="#duck" transform="translate(620,560) scale(1.0) rotate(15 60 60)"/>
+    <use href="#duck" transform="translate(880,140) scale(0.85) rotate(-6 60 60)"/>
+    <use href="#duck" transform="translate(420,720) scale(0.7) rotate(22 60 60)"/>
+    <use href="#duck" transform="translate(50,750) scale(0.8) rotate(-20 60 60)"/>
+  </g>
+  <g color="#FFA000" opacity="0.7">
+    <use href="#duck" transform="translate(260,420) scale(0.5) rotate(8 60 60)"/>
+    <use href="#duck" transform="translate(540,260) scale(0.45) rotate(-14 60 60)"/>
+    <use href="#duck" transform="translate(740,680) scale(0.55) rotate(18 60 60)"/>
+    <use href="#duck" transform="translate(960,500) scale(0.4) rotate(-8 60 60)"/>
+    <use href="#duck" transform="translate(140,360) scale(0.38) rotate(-22 60 60)"/>
+    <use href="#duck" transform="translate(1430,720) scale(0.5) rotate(10 60 60)"/>
+    <use href="#duck" transform="translate(1500,260) scale(0.42) rotate(-10 60 60)"/>
+  </g>
+  <g fill="rgba(255,255,255,0.6)">
+    <circle cx="120" cy="110" r="3"/>
+    <circle cx="320" cy="500" r="2.5"/>
+    <circle cx="500" cy="160" r="3"/>
+    <circle cx="720" cy="430" r="2.5"/>
+    <circle cx="980" cy="280" r="3"/>
+    <circle cx="1280" cy="780" r="2.5"/>
+    <circle cx="1380" cy="200" r="3"/>
+    <circle cx="220" cy="660" r="2.5"/>
+    <circle cx="660" cy="80" r="3"/>
+    <circle cx="1080" cy="780" r="2.5"/>
+  </g>
+</svg>

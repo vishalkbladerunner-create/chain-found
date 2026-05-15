@@ -1,0 +1,624 @@
+<!-- ============================================
+     FOUNDRY PAGE - MIDDLE CONTENT ONLY
+     Copy everything below this comment and paste it
+     between your existing site's <header> and <footer>
+     ============================================ -->
+
+<style>
+    /* Scoped styles for The Foundry page content */
+    .cf-foundry-page {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        color: #333;
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    .cf-hero {
+        background: #051C2C;
+        color: #fff;
+        padding: 8rem 4rem 6rem;
+        position: relative;
+        overflow: hidden;
+    }
+    .cf-hero::before {
+        content: '';
+        position: absolute;
+        top: -50%;
+        right: -10%;
+        width: 600px;
+        height: 600px;
+        background: radial-gradient(circle, rgba(0,169,224,0.08) 0%, transparent 70%);
+        pointer-events: none;
+    }
+    .cf-hero-content { max-width: 1200px; margin: 0 auto; position: relative; z-index: 1; }
+    .cf-hero-eyebrow {
+        display: inline-block;
+        color: #00A9E0;
+        font-size: 0.75rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        margin-bottom: 1.5rem;
+    }
+    .cf-hero-title {
+        font-family: 'Playfair Display', Georgia, serif;
+        font-size: clamp(2.5rem, 5vw, 4.5rem);
+        font-weight: 600;
+        line-height: 1.1;
+        margin: 0 0 1.5rem 0;
+        max-width: 900px;
+    }
+    .cf-hero-subtitle {
+        font-size: clamp(1.1rem, 2vw, 1.35rem);
+        line-height: 1.6;
+        opacity: 0.8;
+        max-width: 640px;
+        font-weight: 300;
+        margin: 0;
+    }
+    .cf-hero-accent-line {
+        width: 60px; height: 3px;
+        background: #00A9E0;
+        margin-top: 2.5rem;
+    }
+
+    .cf-intro {
+        background: #fff;
+        padding: 6rem 4rem;
+    }
+    .cf-container { max-width: 1200px; margin: 0 auto; }
+    .cf-intro-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 6rem;
+        align-items: start;
+    }
+    .cf-intro-label {
+        color: #00A9E0;
+        font-size: 0.75rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        margin-bottom: 1rem;
+    }
+    .cf-intro-heading {
+        font-family: 'Playfair Display', Georgia, serif;
+        font-size: clamp(1.75rem, 3vw, 2.5rem);
+        font-weight: 600;
+        line-height: 1.2;
+        color: #051C2C;
+        margin: 0 0 1.5rem 0;
+    }
+    .cf-intro-text { font-size: 1.05rem; line-height: 1.8; color: #666; }
+    .cf-intro-text p { margin: 0 0 1.25rem 0; }
+    .cf-intro-text p:last-child { margin-bottom: 0; }
+    .cf-intro-stat {
+        border-left: 2px solid #00A9E0;
+        padding-left: 1.5rem;
+        margin-top: 2rem;
+    }
+    .cf-intro-stat-number {
+        font-family: 'Playfair Display', Georgia, serif;
+        font-size: 3rem;
+        font-weight: 600;
+        color: #051C2C;
+        line-height: 1;
+        margin: 0 0 0.5rem 0;
+    }
+    .cf-intro-stat-label {
+        font-size: 0.875rem;
+        color: #4A5568;
+    }
+
+    .cf-capabilities {
+        background: #F8F9FA;
+        padding: 6rem 4rem;
+    }
+    .cf-section-header { text-align: center; margin-bottom: 4rem; }
+    .cf-section-eyebrow {
+        color: #00A9E0;
+        font-size: 0.75rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        margin-bottom: 1rem;
+    }
+    .cf-section-title {
+        font-family: 'Playfair Display', Georgia, serif;
+        font-size: clamp(1.75rem, 3vw, 2.5rem);
+        font-weight: 600;
+        color: #051C2C;
+        margin: 0;
+        line-height: 1.2;
+    }
+    .cf-cards-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+    .cf-card {
+        background: #fff;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 1px 2px rgba(5,28,44,0.05);
+        transition: all 0.3s cubic-bezier(0.4,0,0.2,1);
+        border: 1px solid rgba(5,28,44,0.08);
+    }
+    .cf-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 32px rgba(5,28,44,0.12);
+    }
+    .cf-card-image { width: 100%; height: 220px; object-fit: cover; display: block; }
+    .cf-card-body { padding: 2rem; }
+    .cf-card-tag {
+        display: inline-block;
+        color: #00A9E0;
+        font-size: 0.7rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        margin-bottom: 0.75rem;
+    }
+    .cf-card-title {
+        font-family: 'Playfair Display', Georgia, serif;
+        font-size: 1.35rem;
+        font-weight: 600;
+        color: #051C2C;
+        margin: 0 0 0.75rem 0;
+        line-height: 1.3;
+        transition: color 0.2s ease;
+    }
+    .cf-card:hover .cf-card-title { color: #0088B8; }
+    .cf-card-text {
+        font-size: 0.95rem;
+        color: #666;
+        line-height: 1.7;
+        margin: 0;
+    }
+    .cf-card-link {
+        display: inline-flex;
+        align-items: center;
+        margin-top: 1.25rem;
+        color: #051C2C;
+        text-decoration: none;
+        font-size: 0.875rem;
+        font-weight: 600;
+        transition: all 0.3s ease;
+    }
+    .cf-card-link svg {
+        width: 16px; height: 16px;
+        margin-left: 6px;
+        transition: transform 0.2s ease;
+    }
+    .cf-card-link:hover { color: #00A9E0; }
+    .cf-card-link:hover svg { transform: translateX(4px); }
+
+    .cf-feature {
+        background: #fff;
+        padding: 6rem 4rem;
+    }
+    .cf-feature-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5rem;
+        align-items: center;
+    }
+    .cf-feature-image-wrapper { position: relative; }
+    .cf-feature-image {
+        width: 100%;
+        border-radius: 8px;
+        box-shadow: 0 12px 32px rgba(5,28,44,0.12);
+    }
+    .cf-feature-image-accent {
+        position: absolute;
+        bottom: -20px; right: -20px;
+        width: 120px; height: 120px;
+        background: #00A9E0;
+        border-radius: 8px;
+        opacity: 0.1;
+        z-index: -1;
+    }
+    .cf-feature-content { padding-left: 1rem; }
+    .cf-feature-eyebrow {
+        color: #00A9E0;
+        font-size: 0.75rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        margin-bottom: 1rem;
+    }
+    .cf-feature-title {
+        font-family: 'Playfair Display', Georgia, serif;
+        font-size: clamp(1.75rem, 3vw, 2.5rem);
+        font-weight: 600;
+        color: #051C2C;
+        margin: 0 0 1.5rem 0;
+        line-height: 1.2;
+    }
+    .cf-feature-text {
+        font-size: 1.05rem;
+        line-height: 1.8;
+        color: #666;
+        margin: 0 0 2rem 0;
+    }
+    .cf-feature-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .cf-feature-list li {
+        padding: 0.75rem 0;
+        padding-left: 1.75rem;
+        position: relative;
+        font-size: 0.95rem;
+        color: #333;
+        border-bottom: 1px solid #F0F2F5;
+    }
+    .cf-feature-list li::before {
+        content: '';
+        position: absolute;
+        left: 0; top: 1.1rem;
+        width: 8px; height: 8px;
+        background: #00A9E0;
+        border-radius: 50%;
+    }
+
+    .cf-metrics {
+        background: #051C2C;
+        padding: 4rem;
+        color: #fff;
+    }
+    .cf-metrics-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+        text-align: center;
+    }
+    .cf-metric-number {
+        font-family: 'Playfair Display', Georgia, serif;
+        font-size: 3rem;
+        font-weight: 600;
+        color: #00A9E0;
+        margin: 0 0 0.5rem 0;
+        line-height: 1;
+    }
+    .cf-metric-label {
+        font-size: 0.875rem;
+        opacity: 0.7;
+        font-weight: 300;
+    }
+
+    .cf-insights {
+        background: #F8F9FA;
+        padding: 6rem 4rem;
+    }
+    .cf-insights-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        margin-top: 3rem;
+    }
+    .cf-insight-card {
+        display: flex;
+        background: #fff;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 1px 2px rgba(5,28,44,0.05);
+        transition: all 0.3s cubic-bezier(0.4,0,0.2,1);
+        border: 1px solid rgba(5,28,44,0.08);
+        text-decoration: none;
+        color: inherit;
+    }
+    .cf-insight-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 12px 32px rgba(5,28,44,0.12);
+    }
+    .cf-insight-image {
+        width: 200px;
+        min-height: 160px;
+        object-fit: cover;
+        flex-shrink: 0;
+    }
+    .cf-insight-body {
+        padding: 1.75rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .cf-insight-tag {
+        color: #00A9E0;
+        font-size: 0.7rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        margin-bottom: 0.5rem;
+    }
+    .cf-insight-title {
+        font-family: 'Playfair Display', Georgia, serif;
+        font-size: 1.15rem;
+        font-weight: 600;
+        color: #051C2C;
+        margin: 0 0 0.5rem 0;
+        line-height: 1.3;
+        transition: color 0.2s ease;
+    }
+    .cf-insight-card:hover .cf-insight-title { color: #0088B8; }
+    .cf-insight-date {
+        font-size: 0.8rem;
+        color: #8A93A0;
+    }
+
+    .cf-cta {
+        background: #051C2C;
+        padding: 6rem 4rem;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+    }
+    .cf-cta::before {
+        content: '';
+        position: absolute;
+        bottom: -30%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 800px; height: 400px;
+        background: radial-gradient(ellipse, rgba(0,169,224,0.1) 0%, transparent 70%);
+        pointer-events: none;
+    }
+    .cf-cta-content {
+        position: relative;
+        z-index: 1;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+    .cf-cta-title {
+        font-family: 'Playfair Display', Georgia, serif;
+        font-size: clamp(2rem, 4vw, 3rem);
+        font-weight: 600;
+        color: #fff;
+        margin: 0 0 1.5rem 0;
+        line-height: 1.2;
+    }
+    .cf-cta-text {
+        font-size: 1.1rem;
+        color: rgba(255,255,255,0.7);
+        margin: 0 0 2.5rem 0;
+        font-weight: 300;
+    }
+    .cf-btn {
+        display: inline-flex;
+        align-items: center;
+        padding: 1rem 2.5rem;
+        background: #00A9E0;
+        color: #fff;
+        text-decoration: none;
+        font-size: 0.875rem;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        border-radius: 4px;
+        transition: all 0.3s ease;
+        border: none;
+        cursor: pointer;
+    }
+    .cf-btn:hover {
+        background: #0088B8;
+        transform: translateY(-2px);
+        box-shadow: 0 8px 24px rgba(0,169,224,0.3);
+    }
+    .cf-btn-outline {
+        background: transparent;
+        border: 1px solid rgba(255,255,255,0.3);
+        margin-left: 1rem;
+    }
+    .cf-btn-outline:hover {
+        background: rgba(255,255,255,0.1);
+        border-color: rgba(255,255,255,0.5);
+        box-shadow: none;
+    }
+
+    @media (max-width: 1024px) {
+        .cf-cards-grid { grid-template-columns: repeat(2, 1fr); }
+        .cf-intro-grid, .cf-feature-grid { grid-template-columns: 1fr; gap: 3rem; }
+        .cf-feature-content { padding-left: 0; }
+        .cf-metrics-grid { grid-template-columns: repeat(2, 1fr); }
+        .cf-insights-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 768px) {
+        .cf-hero, .cf-intro, .cf-capabilities, .cf-feature, .cf-metrics, .cf-insights, .cf-cta {
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+        .cf-cards-grid { grid-template-columns: 1fr; }
+        .cf-metrics-grid { grid-template-columns: 1fr 1fr; gap: 2rem 1rem; }
+        .cf-insight-card { flex-direction: column; }
+        .cf-insight-image { width: 100%; height: 180px; }
+        .cf-btn-outline { margin-left: 0; margin-top: 1rem; }
+        .cf-cta .cf-btn { flex-direction: column; width: 100%; justify-content: center; }
+    }
+</style>
+
+<main class="cf-foundry-page">
+
+    <!-- Hero Section -->
+    <section class="cf-hero">
+        <div class="cf-hero-content">
+            <span class="cf-hero-eyebrow">Investment Management</span>
+            <h1 class="cf-hero-title">The Foundry</h1>
+            <p class="cf-hero-subtitle">One system. Many launches. A venture factory built for the on-chain era, transforming proven Web2 businesses into liquidity-ready Web3 products.</p>
+            <div class="cf-hero-accent-line"></div>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="cf-intro">
+        <div class="cf-container">
+            <div class="cf-intro-grid">
+                <div>
+                    <span class="cf-intro-label">Our Approach</span>
+                    <h2 class="cf-intro-heading">One Studio. Shared Stack. Liquid From Day One.</h2>
+                    <div class="cf-intro-stat">
+                        <div class="cf-intro-stat-number">100k+</div>
+                        <div class="cf-intro-stat-label">Ecosystem operators, builders &amp; allocators</div>
+                    </div>
+                </div>
+                <div class="cf-intro-text">
+                    <p>ChainFoundry is a venture factory built for the on-chain era. We take proven Web2 businesses with real revenue and validated product–market fit, then rebuild them as liquidity-ready Web3 products on a single, repeatable execution system.</p>
+                    <p>One in-house team — engineering, design, tokenomics, legal — runs every product through the same disciplined build. Shared infrastructure, shared talent, and a 100k+ ecosystem mean each launch ships with distribution, narrative, and liquidity from day one.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Capabilities Grid -->
+    <section class="cf-capabilities">
+        <div class="cf-container">
+            <div class="cf-section-header">
+                <span class="cf-section-eyebrow">Capabilities</span>
+                <h2 class="cf-section-title">How The Foundry Works</h2>
+            </div>
+            <div class="cf-cards-grid">
+                <article class="cf-card">
+                    <img src="foundry-page/images/cf_lead_build.jpg" alt="Studio Launches" class="cf-card-image">
+                    <div class="cf-card-body">
+                        <span class="cf-card-tag">Execution</span>
+                        <h3 class="cf-card-title">Studio Launches</h3>
+                        <p class="cf-card-text">Every product moves through ChainFoundry's shared engineering, design, tokenomics, and legal stack — built once, sharpened across every launch.</p>
+                        <a href="#" class="cf-card-link">
+                            Learn more
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </a>
+                    </div>
+                </article>
+                <article class="cf-card">
+                    <img src="foundry-page/images/cf_lead_distribute.jpg" alt="Ecosystem & Liquidity" class="cf-card-image">
+                    <div class="cf-card-body">
+                        <span class="cf-card-tag">Distribution</span>
+                        <h3 class="cf-card-title">Ecosystem &amp; Liquidity</h3>
+                        <p class="cf-card-text">A 100k+ network of operators, builders, and allocators gives every launch warm distribution, on-chain liquidity, and credible market depth from day one.</p>
+                        <a href="#" class="cf-card-link">
+                            Learn more
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </a>
+                    </div>
+                </article>
+                <article class="cf-card">
+                    <img src="foundry-page/images/cf_lead_advisory.jpg" alt="Advisory" class="cf-card-image">
+                    <div class="cf-card-body">
+                        <span class="cf-card-tag">Strategy</span>
+                        <h3 class="cf-card-title">Family Advisory</h3>
+                        <p class="cf-card-text">Institutional-grade advisory for treasury management, token design, and capital allocation — bridging traditional finance with on-chain infrastructure.</p>
+                        <a href="#" class="cf-card-link">
+                            Learn more
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Section -->
+    <section class="cf-feature">
+        <div class="cf-container">
+            <div class="cf-feature-grid">
+                <div class="cf-feature-image-wrapper">
+                    <img src="foundry-page/images/cf_lead_operate.jpg" alt="Operations" class="cf-feature-image">
+                    <div class="cf-feature-image-accent"></div>
+                </div>
+                <div class="cf-feature-content">
+                    <span class="cf-feature-eyebrow">Methodology</span>
+                    <h2 class="cf-feature-title">A Disciplined, Repeatable Build Process</h2>
+                    <p class="cf-feature-text">Our operating model replaces ad-hoc project execution with a systematic factory approach. Each product moves through standardized phases with clear milestones, governance, and accountability.</p>
+                    <ul class="cf-feature-list">
+                        <li>Diligence &amp; market validation against Web3 opportunity sizing</li>
+                        <li>Tokenomics architecture and regulatory structuring</li>
+                        <li>Shared engineering sprints across smart contract and frontend layers</li>
+                        <li>Launch coordination with ecosystem partners and liquidity providers</li>
+                        <li>Post-launch governance support and treasury optimization</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Metrics Strip -->
+    <section class="cf-metrics">
+        <div class="cf-container">
+            <div class="cf-metrics-grid">
+                <div class="cf-metric">
+                    <div class="cf-metric-number">12+</div>
+                    <div class="cf-metric-label">Products in market</div>
+                </div>
+                <div class="cf-metric">
+                    <div class="cf-metric-number">$40M+</div>
+                    <div class="cf-metric-label">Assets under management</div>
+                </div>
+                <div class="cf-metric">
+                    <div class="cf-metric-number">100k+</div>
+                    <div class="cf-metric-label">Community members</div>
+                </div>
+                <div class="cf-metric">
+                    <div class="cf-metric-number">4x</div>
+                    <div class="cf-metric-label">Average launch velocity</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Insights Section -->
+    <section class="cf-insights">
+        <div class="cf-container">
+            <div class="cf-section-header">
+                <span class="cf-section-eyebrow">Perspectives</span>
+                <h2 class="cf-section-title">Latest from The Foundry</h2>
+            </div>
+            <div class="cf-insights-grid">
+                <a href="#" class="cf-insight-card">
+                    <img src="foundry-page/images/cf_news_growth_growth_card1.jpg" alt="Insight" class="cf-insight-image">
+                    <div class="cf-insight-body">
+                        <span class="cf-insight-tag">Tokenomics</span>
+                        <h3 class="cf-insight-title">Designing Sustainable Token Economies for Real-World Revenue</h3>
+                        <span class="cf-insight-date">May 2026</span>
+                    </div>
+                </a>
+                <a href="#" class="cf-insight-card">
+                    <img src="foundry-page/images/cf_news_growth_growth_card2.jpg" alt="Insight" class="cf-insight-image">
+                    <div class="cf-insight-body">
+                        <span class="cf-insight-tag">Regulation</span>
+                        <h3 class="cf-insight-title">Navigating Multi-Jurisdictional Compliance in On-Chain Product Launches</h3>
+                        <span class="cf-insight-date">April 2026</span>
+                    </div>
+                </a>
+                <a href="#" class="cf-insight-card">
+                    <img src="foundry-page/images/cf_news_growth_growth_card3.jpg" alt="Insight" class="cf-insight-image">
+                    <div class="cf-insight-body">
+                        <span class="cf-insight-tag">Ecosystem</span>
+                        <h3 class="cf-insight-title">How Network Effects Compound Across a Shared Venture Stack</h3>
+                        <span class="cf-insight-date">March 2026</span>
+                    </div>
+                </a>
+                <a href="#" class="cf-insight-card">
+                    <img src="foundry-page/images/cf_news_growth_growth_card4.jpg" alt="Insight" class="cf-insight-image">
+                    <div class="cf-insight-body">
+                        <span class="cf-insight-tag">Operations</span>
+                        <h3 class="cf-insight-title">The Case for In-House Engineering in Liquidity-Ready Product Builds</h3>
+                        <span class="cf-insight-date">February 2026</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cf-cta">
+        <div class="cf-cta-content">
+            <h2 class="cf-cta-title">Ready to bring your product on-chain?</h2>
+            <p class="cf-cta-text">Join the builders, allocators, and operators who are reshaping how Web3 products are conceived, built, and launched.</p>
+            <div>
+                <a href="#" class="cf-btn">Contact The Foundry</a>
+                <a href="#" class="cf-btn cf-btn-outline">View Portfolio</a>
+            </div>
+        </div>
+    </section>
+
+</main>

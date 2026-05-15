@@ -1,0 +1,198 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 600" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <!-- Dark base gradient -->
+    <linearGradient id="pf-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="50%" stop-color="#0d1f35"/>
+      <stop offset="100%" stop-color="#061220"/>
+    </linearGradient>
+
+    <!-- Cube face gradients -->
+    <linearGradient id="pf-top" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a5f" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#162d4a" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="pf-left" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563eb" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#1e3a5f" stop-opacity="0.5"/>
+    </linearGradient>
+    <linearGradient id="pf-right" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1e3a5f" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#0f2540" stop-opacity="0.7"/>
+    </linearGradient>
+
+    <!-- Glowing cube variant -->
+    <linearGradient id="pf-glow-top" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4d7fff" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#2563eb" stop-opacity="0.4"/>
+    </linearGradient>
+    <linearGradient id="pf-glow-left" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#82b1ff" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#4d7fff" stop-opacity="0.3"/>
+    </linearGradient>
+    <linearGradient id="pf-glow-right" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563eb" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#1a3a6e" stop-opacity="0.5"/>
+    </linearGradient>
+
+    <!-- Soft ambient orbs -->
+    <radialGradient id="pf-orb1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#2563eb" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#2563eb" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="pf-orb2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00d4ff" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#00d4ff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Base dark background -->
+  <rect width="1920" height="600" fill="url(#pf-bg)"/>
+
+  <!-- Ambient glow orbs -->
+  <circle cx="1600" cy="120" r="350" fill="url(#pf-orb1)"/>
+  <circle cx="200" cy="480" r="300" fill="url(#pf-orb2)"/>
+  <circle cx="960" cy="300" r="250" fill="url(#pf-orb1)" opacity="0.5"/>
+
+  <!-- Isometric cube grid - left cluster -->
+  <g opacity="0.85">
+    <!-- Cube at 200,300 size 60 -->
+    <polygon points="200,270 230,285 230,315 200,330 170,315 170,285" fill="url(#pf-top)"/>
+    <polygon points="170,285 200,270 200,300 170,315" fill="url(#pf-left)"/>
+    <polygon points="200,270 230,285 230,315 200,300" fill="url(#pf-right)"/>
+
+    <!-- Cube at 260,330 size 60 -->
+    <polygon points="260,300 290,315 290,345 260,360 230,345 230,315" fill="url(#pf-top)"/>
+    <polygon points="230,315 260,300 260,330 230,345" fill="url(#pf-left)"/>
+    <polygon points="260,300 290,315 290,345 260,330" fill="url(#pf-right)"/>
+
+    <!-- Cube at 140,330 size 60 -->
+    <polygon points="140,300 170,315 170,345 140,360 110,345 110,315" fill="url(#pf-top)"/>
+    <polygon points="110,315 140,300 140,330 110,345" fill="url(#pf-left)"/>
+    <polygon points="140,300 170,315 170,345 140,330" fill="url(#pf-right)"/>
+
+    <!-- Cube at 200,360 size 60 -->
+    <polygon points="200,330 230,345 230,375 200,390 170,375 170,345" fill="url(#pf-top)"/>
+    <polygon points="170,345 200,330 200,360 170,375" fill="url(#pf-left)"/>
+    <polygon points="200,330 230,345 230,375 200,360" fill="url(#pf-right)"/>
+
+    <!-- Glowing cube at 320,300 size 50 -->
+    <polygon points="320,275 345,287.5 345,312.5 320,325 295,312.5 295,287.5" fill="url(#pf-glow-top)"/>
+    <polygon points="295,287.5 320,275 320,300 295,312.5" fill="url(#pf-glow-left)"/>
+    <polygon points="320,275 345,287.5 345,312.5 320,300" fill="url(#pf-glow-right)"/>
+    <!-- Glow edge -->
+    <polygon points="320,275 345,287.5 345,312.5 320,325 295,312.5 295,287.5" fill="none" stroke="#4d7fff" stroke-width="0.8" opacity="0.6"/>
+  </g>
+
+  <!-- Isometric cube grid - right cluster (larger, more prominent) -->
+  <g opacity="0.9">
+    <!-- Center cube at 1500,250 size 80 -->
+    <polygon points="1500,210 1540,230 1540,270 1500,290 1460,270 1460,230" fill="url(#pf-top)"/>
+    <polygon points="1460,230 1500,210 1500,250 1460,270" fill="url(#pf-left)"/>
+    <polygon points="1500,210 1540,230 1540,270 1500,250" fill="url(#pf-right)"/>
+
+    <!-- Cube at 1580,290 size 80 -->
+    <polygon points="1580,250 1620,270 1620,310 1580,330 1540,310 1540,270" fill="url(#pf-top)"/>
+    <polygon points="1540,270 1580,250 1580,290 1540,310" fill="url(#pf-left)"/>
+    <polygon points="1580,250 1620,270 1620,310 1580,290" fill="url(#pf-right)"/>
+
+    <!-- Cube at 1420,290 size 80 -->
+    <polygon points="1420,250 1460,270 1460,310 1420,330 1380,310 1380,270" fill="url(#pf-top)"/>
+    <polygon points="1380,270 1420,250 1420,290 1380,310" fill="url(#pf-left)"/>
+    <polygon points="1420,250 1460,270 1460,310 1420,290" fill="url(#pf-right)"/>
+
+    <!-- Cube at 1500,330 size 80 -->
+    <polygon points="1500,290 1540,310 1540,350 1500,370 1460,350 1460,310" fill="url(#pf-top)"/>
+    <polygon points="1460,310 1500,290 1500,330 1460,350" fill="url(#pf-left)"/>
+    <polygon points="1500,290 1540,310 1540,350 1500,330" fill="url(#pf-right)"/>
+
+    <!-- Top cube at 1500,170 size 80 -->
+    <polygon points="1500,130 1540,150 1540,190 1500,210 1460,190 1460,150" fill="url(#pf-top)"/>
+    <polygon points="1460,150 1500,130 1500,170 1460,190" fill="url(#pf-left)"/>
+    <polygon points="1500,130 1540,150 1540,190 1500,170" fill="url(#pf-right)"/>
+
+    <!-- Glowing accent cube at 1660,250 size 60 -->
+    <polygon points="1660,220 1690,235 1690,265 1660,280 1630,265 1630,235" fill="url(#pf-glow-top)"/>
+    <polygon points="1630,235 1660,220 1660,250 1630,265" fill="url(#pf-glow-left)"/>
+    <polygon points="1660,220 1690,235 1690,265 1660,250" fill="url(#pf-glow-right)"/>
+    <polygon points="1660,220 1690,235 1690,265 1660,280 1630,265 1630,235" fill="none" stroke="#4d7fff" stroke-width="0.8" opacity="0.5"/>
+  </g>
+
+  <!-- Small floating cubes scattered -->
+  <g opacity="0.5">
+    <!-- Small cube at 400,200 size 30 -->
+    <polygon points="400,185 415,192.5 415,207.5 400,215 385,207.5 385,192.5" fill="url(#pf-top)"/>
+    <polygon points="385,192.5 400,185 400,200 385,207.5" fill="url(#pf-left)"/>
+    <polygon points="400,185 415,192.5 415,207.5 400,200" fill="url(#pf-right)"/>
+
+    <!-- Small cube at 1300,400 size 35 -->
+    <polygon points="1300,382.5 1317.5,391.25 1317.5,408.75 1300,417.5 1282.5,408.75 1282.5,391.25" fill="url(#pf-top)"/>
+    <polygon points="1282.5,391.25 1300,382.5 1300,400 1282.5,408.75" fill="url(#pf-left)"/>
+    <polygon points="1300,382.5 1317.5,391.25 1317.5,408.75 1300,400" fill="url(#pf-right)"/>
+
+    <!-- Small cube at 600,450 size 25 -->
+    <polygon points="600,437.5 612.5,443.75 612.5,456.25 600,462.5 587.5,456.25 587.5,443.75" fill="url(#pf-top)"/>
+    <polygon points="587.5,443.75 600,437.5 600,450 587.5,456.25" fill="url(#pf-left)"/>
+    <polygon points="600,437.5 612.5,443.75 612.5,456.25 600,450" fill="url(#pf-right)"/>
+
+    <!-- Small cube at 1100,150 size 28 -->
+    <polygon points="1100,136 1114,143 1114,157 1100,164 1086,157 1086,143" fill="url(#pf-top)"/>
+    <polygon points="1086,143 1100,136 1100,150 1086,157" fill="url(#pf-left)"/>
+    <polygon points="1100,136 1114,143 1114,157 1100,150" fill="url(#pf-right)"/>
+  </g>
+
+  <!-- Grid floor lines (isometric perspective) -->
+  <g stroke="#2563eb" stroke-width="0.6" fill="none" opacity="0.1">
+    <!-- Horizontal-ish grid lines -->
+    <line x1="0" y1="450" x2="400" y2="600"/>
+    <line x1="200" y1="450" x2="600" y2="600"/>
+    <line x1="400" y1="450" x2="800" y2="600"/>
+    <line x1="600" y1="450" x2="1000" y2="600"/>
+    <line x1="800" y1="450" x2="1200" y2="600"/>
+    <line x1="1000" y1="450" x2="1400" y2="600"/>
+    <line x1="1200" y1="450" x2="1600" y2="600"/>
+    <line x1="1400" y1="450" x2="1800" y2="600"/>
+    <line x1="1600" y1="450" x2="1920" y2="583"/>
+
+    <!-- Vertical-ish grid lines -->
+    <line x1="0" y1="520" x2="300" y2="400"/>
+    <line x1="0" y1="560" x2="300" y2="440"/>
+    <line x1="0" y1="600" x2="300" y2="480"/>
+    <line x1="400" y1="600" x2="700" y2="480"/>
+    <line x1="800" y1="600" x2="1100" y2="480"/>
+    <line x1="1200" y1="600" x2="1500" y2="480"/>
+    <line x1="1600" y1="600" x2="1920" y2="496"/>
+  </g>
+
+  <!-- Connection lines between cubes (subtle blockchain feel) -->
+  <g stroke="#4d7fff" stroke-width="1" fill="none" opacity="0.15" stroke-linecap="round">
+    <line x1="290" y1="315" x2="320" y2="300"/>
+    <line x1="230" y1="345" x2="260" y2="330"/>
+    <line x1="170" y1="345" x2="200" y2="330"/>
+    <line x1="1540" y1="250" x2="1580" y2="270"/>
+    <line x1="1460" y1="250" x2="1500" y2="270"/>
+    <line x1="1500" y1="210" x2="1500" y2="250"/>
+    <line x1="1540" y1="310" x2="1660" y2="250"/>
+  </g>
+
+  <!-- Floating particles -->
+  <g fill="#4d7fff" opacity="0.25">
+    <circle cx="450" cy="180" r="2"/>
+    <circle cx="500" cy="250" r="1.5"/>
+    <circle cx="350" cy="420" r="2.5"/>
+    <circle cx="1250" cy="350" r="2"/>
+    <circle cx="1350" cy="200" r="1.5"/>
+    <circle cx="1700" cy="380" r="2"/>
+    <circle cx="1800" cy="150" r="1.5"/>
+    <circle cx="100" cy="300" r="2"/>
+    <circle cx="850" cy="120" r="1.5"/>
+    <circle cx="950" cy="480" r="2"/>
+  </g>
+
+  <!-- Subtle hexagon outline accents -->
+  <g stroke="#2563eb" stroke-width="0.8" fill="none" opacity="0.12">
+    <polygon points="700,120 720,131.5 720,154.5 700,166 680,154.5 680,131.5"/>
+    <polygon points="1200,420 1220,431.5 1220,454.5 1200,466 1180,454.5 1180,431.5"/>
+    <polygon points="900,350 915,358.75 915,376.25 900,385 885,376.25 885,358.75"/>
+  </g>
+</svg>

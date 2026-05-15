@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bullshot | ChainFoundry</title>
+  <meta name="description" content="An AI-powered launch platform for trend-speed markets.">
+  <link rel="icon" type="image/svg+xml" href="../../cf_logo.svg">
+  <link rel="stylesheet" href="../../css/main.css">
+</head>
+<body>
+
+  <!-- ==================== HEADER ==================== -->
+  <header class="site-header" id="site-header">
+    <div class="site-header__inner">
+      <!-- Left: Hamburger + Logo + Nav -->
+      <div class="site-header__left">
+        <button class="hamburger" id="hamburger-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mega-menu">
+          <span></span><span></span><span></span>
+        </button>
+        <a href="../../index.html" class="site-logo">ChainFoundry</a>
+        <nav class="desktop-nav" aria-label="Primary">
+        <ul class="desktop-nav__list">
+          <li class="desktop-nav__item">
+            <a href="../../foundry/index.html" class="desktop-nav__link">
+              The Foundry
+              <svg class="desktop-nav__chevron" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg>
+            </a>
+            <div class="desktop-nav__dropdown">
+              <div class="dropdown__inner">
+                <a href="../../foundry/index.html" class="dropdown__header">
+                  The Foundry
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <div class="dropdown__grid">
+                  <a href="../../foundry/index.html" class="dropdown__link">Family Advisory</a>
+                  <a href="../../foundry/index.html" class="dropdown__link">Investment Portfolios</a>
+                  <a href="../../foundry/index.html" class="dropdown__link">Client Log-In</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="desktop-nav__item">
+            <a href="../../portfolio/index.html" class="desktop-nav__link">
+              Portfolio
+              <svg class="desktop-nav__chevron" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg>
+            </a>
+            <div class="desktop-nav__dropdown">
+              <div class="dropdown__inner">
+                <a href="../../portfolio/index.html" class="dropdown__header">
+                  Portfolio
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <div class="dropdown__grid dropdown__grid--2">
+                  <a href="../../portfolio/bullshot/index.html" class="dropdown__link">Bullshot</a>
+                  <a href="../../portfolio/bduck/index.html" class="dropdown__link">B.Duck</a>
+                  <a href="../../portfolio/zappy/index.html" class="dropdown__link">Zappy</a>
+                  <a href="../../portfolio/oraclex/index.html" class="dropdown__link">OracleX</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="desktop-nav__item">
+            <a href="../../venture-growth/index.html" class="desktop-nav__link">Venture &amp; Growth</a>
+          </li>
+          <li class="desktop-nav__item">
+            <a href="../../leadership/index.html" class="desktop-nav__link">
+              Leadership
+              <svg class="desktop-nav__chevron" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg>
+            </a>
+            <div class="desktop-nav__dropdown">
+              <div class="dropdown__inner">
+                <a href="../../leadership/index.html" class="dropdown__header">
+                  Leadership
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <div class="dropdown__grid dropdown__grid--2">
+                  <a href="../../leadership/index.html" class="dropdown__link">Founders</a>
+                  <a href="../../leadership/index.html" class="dropdown__link">Partners</a>
+                  <a href="../../leadership/index.html" class="dropdown__link">Half a Billion</a>
+                  <a href="../../leadership/index.html" class="dropdown__link">Insights</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="desktop-nav__item">
+            <a href="../../insights/index.html" class="desktop-nav__link">
+              Insights
+              <svg class="desktop-nav__chevron" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg>
+            </a>
+            <div class="desktop-nav__dropdown">
+              <div class="dropdown__inner">
+                <a href="../../insights/index.html" class="dropdown__header">
+                  Insights
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <div class="dropdown__grid dropdown__grid--2">
+                  <a href="../../insights/index.html" class="dropdown__link">News</a>
+                  <a href="../../insights/index.html" class="dropdown__link">Press</a>
+                  <a href="../../insights/index.html" class="dropdown__link">Reports</a>
+                  <a href="../../insights/index.html" class="dropdown__link">Podcasts</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="desktop-nav__item">
+            <a href="../../about/index.html" class="desktop-nav__link">
+              About
+              <svg class="desktop-nav__chevron" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg>
+            </a>
+            <div class="desktop-nav__dropdown">
+              <div class="dropdown__inner">
+                <a href="../../about/index.html" class="dropdown__header">
+                  About
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <div class="dropdown__grid dropdown__grid--2">
+                  <a href="../../about/index.html" class="dropdown__link">Our Story</a>
+                  <a href="../../about/index.html" class="dropdown__link">Team</a>
+                  <a href="../../about/index.html" class="dropdown__link">Contact</a>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      </div>
+
+      <!-- Right: Auth + Search -->
+      <div class="site-header__right">
+        <div class="header-auth">
+          <a href="#">Sign In</a>
+          <span class="header-auth__divider">|</span>
+          <a href="#">Subscribe</a>
+        </div>
+        <button class="header-search-btn" aria-label="Search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== MEGA MENU ==================== -->
+  <div class="mega-menu-backdrop" id="mega-menu-backdrop"></div>
+  <div class="mega-menu" id="mega-menu" aria-hidden="true">
+    <div class="mega-menu__inner">
+      <!-- Left Sidebar -->
+      <div class="mega-menu__sidebar">
+        <div class="mega-menu__top">
+          <button class="mega-menu__close" id="mega-menu-close" aria-label="Close menu">
+            <span></span>
+            <span></span>
+          </button>
+          <div class="mega-menu__top-divider"></div>
+          <a href="../../index.html" class="mega-menu__logo">ChainFoundry</a>
+        </div>
+        <nav class="mega-menu__nav" aria-label="Mobile">
+          <button class="mega-menu__item is-active" data-panel="foundry">
+            The Foundry
+            <svg class="mega-menu__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+          </button>
+          <button class="mega-menu__item" data-panel="portfolio">
+            Portfolio
+            <svg class="mega-menu__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+          </button>
+          <a href="../../venture-growth/index.html" class="mega-menu__item" data-panel="venture">
+            Venture &amp; Growth
+          </a>
+          <button class="mega-menu__item" data-panel="leadership">
+            Leadership
+            <svg class="mega-menu__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+          </button>
+          <button class="mega-menu__item" data-panel="insights">
+            Insights
+            <svg class="mega-menu__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+          </button>
+          <button class="mega-menu__item" data-panel="about">
+            About
+            <svg class="mega-menu__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+          </button>
+        </nav>
+        <div class="mega-menu__footer">
+          <a href="#">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            Sign In
+          </a>
+          <a href="#">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22,6 12,13 2,6"/></svg>
+            Email Subscriptions
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Content Panels -->
+      <div class="mega-menu__panel" id="mega-menu-panel">
+        <div class="mega-panel is-active" id="panel-foundry">
+          <a href="../../foundry/index.html" class="mega-panel__header">
+            The Foundry
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <div class="mega-panel__grid">
+            <a href="../../foundry/index.html" class="mega-panel__link">Family Advisory</a>
+            <a href="../../foundry/index.html" class="mega-panel__link">Investment Portfolios</a>
+            <a href="../../foundry/index.html" class="mega-panel__link">Client Log-In</a>
+          </div>
+        </div>
+        <div class="mega-panel" id="panel-portfolio">
+          <a href="../../portfolio/index.html" class="mega-panel__header">
+            Portfolio
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <div class="mega-panel__grid">
+            <a href="../../portfolio/bullshot/index.html" class="mega-panel__link">Bullshot</a>
+            <a href="../../portfolio/bduck/index.html" class="mega-panel__link">B.Duck</a>
+            <a href="../../portfolio/zappy/index.html" class="mega-panel__link">Zappy</a>
+            <a href="../../portfolio/oraclex/index.html" class="mega-panel__link">OracleX</a>
+          </div>
+        </div>
+        <div class="mega-panel" id="panel-venture">
+          <a href="../../venture-growth/index.html" class="mega-panel__header">
+            Venture &amp; Growth
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <p class="mega-panel__desc">We help clients unlock the power of AI at scale, modernize technology delivery, and build new businesses to fuel growth.</p>
+        </div>
+        <div class="mega-panel" id="panel-leadership">
+          <a href="../../leadership/index.html" class="mega-panel__header">
+            Leadership
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <div class="mega-panel__grid">
+            <a href="../../leadership/index.html" class="mega-panel__link">Founders</a>
+            <a href="../../leadership/index.html" class="mega-panel__link">Partners</a>
+            <a href="../../leadership/index.html" class="mega-panel__link">Half a Billion</a>
+            <a href="../../leadership/index.html" class="mega-panel__link">Insights</a>
+          </div>
+        </div>
+        <div class="mega-panel" id="panel-insights">
+          <a href="../../insights/index.html" class="mega-panel__header">
+            Insights
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <div class="mega-panel__grid">
+            <a href="../../insights/index.html" class="mega-panel__link">News</a>
+            <a href="../../insights/index.html" class="mega-panel__link">Press</a>
+            <a href="../../insights/index.html" class="mega-panel__link">Reports</a>
+            <a href="../../insights/index.html" class="mega-panel__link">Podcasts</a>
+          </div>
+        </div>
+        <div class="mega-panel" id="panel-about">
+          <a href="../../about/index.html" class="mega-panel__header">
+            About
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <div class="mega-panel__grid">
+            <a href="../../about/index.html" class="mega-panel__link">Our Story</a>
+            <a href="../../about/index.html" class="mega-panel__link">Team</a>
+            <a href="../../about/index.html" class="mega-panel__link">Contact</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content">
+
+    <!-- ==================== HERO BANNER ==================== -->
+    <section class="cf-pp-banner cf-pp-banner--light">
+      <div class="padding-global">
+        <a href="../../portfolio/index.html" class="cf-pp-back-top">
+          <span class="arrow">&larr;</span> Back
+        </a>
+        <div class="cf-pp-banner-grid">
+          <div class="cf-pp-banner-text">
+            <p class="cf-portfolio-eyebrow">Launch Platform</p>
+            <h1 class="section__title" style="margin-top:20px;color:var(--white);">Bullshot</h1>
+            <div style="margin-top:28px;">
+              <p style="font-size:1.15rem;line-height:1.65;color:rgba(255,255,255,0.92);max-width:520px;">An AI-powered launch platform for trend-speed markets — closing the gap between a great product and a great launch.</p>
+            </div>
+          </div>
+          <div class="cf-pp-banner-logo">
+            <div class="cf-pp-circle">
+              <img src="../../cf-images/cf_logo_bullshot.png" alt="Bullshot">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== INTRO & STATS ==================== -->
+    <section class="section cf-pp-section--white">
+      <div class="container">
+        <div class="cf-pp-intro">
+          <p style="font-size:1.15rem;color:var(--navy);line-height:1.7;">Bullshot compresses weeks of GTM work into a coordinated, data-driven campaign — plugged directly into the ChainFoundry ecosystem network. It is the system used to launch every product the foundry builds, and it is offered as a service to founders building the next generation of consumer crypto.</p>
+        </div>
+        <div class="cf-pp-stats-rail" style="margin-top:64px;">
+          <div>
+            <div class="cf-pp-stat-v">12 wk</div>
+            <div class="cf-pp-stat-l">Build sprint</div>
+          </div>
+          <div>
+            <div class="cf-pp-stat-v">AI</div>
+            <div class="cf-pp-stat-l">Core engine</div>
+          </div>
+          <div>
+            <div class="cf-pp-stat-v">Web3</div>
+            <div class="cf-pp-stat-l">Native</div>
+          </div>
+          <div>
+            <div class="cf-pp-stat-v">Seed</div>
+            <div class="cf-pp-stat-l">Stage</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== THE LAUNCH STACK ==================== -->
+    <section class="section cf-pp-section--tint">
+      <div class="container">
+        <div class="cf-section-head" style="margin-bottom:16px;">
+          <p class="cf-eyebrow">The launch stack</p>
+          <h2>Four modules. One coordinated launch.</h2>
+          <p class="cf-section-sub" style="margin-top:24px;">Each layer ships independently and composes into a single system. Founders get the whole stack; the foundry gets a flywheel that compounds with every launch.</p>
+        </div>
+        <div class="cf-bs-stack" style="margin-top:56px;">
+          <div class="cf-bs-layer" style="--accent:#FF6B3D;">
+            <div class="cf-bs-layer-n">01</div>
+            <div class="cf-bs-layer-body">
+              <h4>Narrative AI</h4>
+              <p>GPT-class models trained on 200+ historical launches surface the angles that move volume and the ones that fizzle.</p>
+            </div>
+          </div>
+          <div class="cf-bs-layer" style="--accent:#34D399;">
+            <div class="cf-bs-layer-n">02</div>
+            <div class="cf-bs-layer-body">
+              <h4>KOL Routing</h4>
+              <p>Automated outreach engine matches every product to the 50–100 voices most likely to actually move their audience — not the loudest, the most relevant.</p>
+            </div>
+          </div>
+          <div class="cf-bs-layer" style="--accent:#A78BFA;">
+            <div class="cf-bs-layer-n">03</div>
+            <div class="cf-bs-layer-body">
+              <h4>Programmatic Distribution</h4>
+              <p>Content is sequenced and dropped across channels with timing optimised against on-chain activity, not vanity metrics.</p>
+            </div>
+          </div>
+          <div class="cf-bs-layer" style="--accent:var(--blue);">
+            <div class="cf-bs-layer-n">04</div>
+            <div class="cf-bs-layer-body">
+              <h4>Sentiment Telemetry</h4>
+              <p>Live on-chain + social sentiment feeds back into the campaign in real time. Bullshot reads the room and adjusts before the team would.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== THESIS PILLARS ==================== -->
+    <section class="section cf-pp-section--white">
+      <div class="container">
+        <div class="cf-section-head" style="margin-bottom:16px;">
+          <p class="cf-eyebrow">Inside the thesis</p>
+          <h2>Why Bullshot.</h2>
+        </div>
+        <div class="cf-pp-pillars" style="margin-top:56px;">
+          <div class="cf-pp-pillar-cell">
+            <div class="cf-pp-pillar-head">
+              <span class="cf-pp-pillar-n">01</span>
+              <h3 class="cf-pp-pillar-t">The Problem</h3>
+            </div>
+            <p class="cf-pp-pillar-b">Token launches fail at distribution. Teams with great products spend months on narrative, community, and market access — losing the timing advantage that makes Web3 launches work.</p>
+          </div>
+          <div class="cf-pp-pillar-cell">
+            <div class="cf-pp-pillar-head">
+              <span class="cf-pp-pillar-n">02</span>
+              <h3 class="cf-pp-pillar-t">The Edge</h3>
+            </div>
+            <p class="cf-pp-pillar-b">Built on ChainFoundry infrastructure, Bullshot inherits a 100k+ ecosystem reach and a shared intelligence layer trained on previous launches. Every product launch makes the next one sharper.</p>
+          </div>
+          <div class="cf-pp-pillar-cell">
+            <div class="cf-pp-pillar-head">
+              <span class="cf-pp-pillar-n">03</span>
+              <h3 class="cf-pp-pillar-t">The System</h3>
+            </div>
+            <p class="cf-pp-pillar-b">A modular GTM stack: AI-driven narrative testing, automated KOL routing, programmatic content distribution, and on-chain sentiment tracking. Each module ships independently but composes into a single coordinated launch.</p>
+          </div>
+          <div class="cf-pp-pillar-cell">
+            <div class="cf-pp-pillar-head">
+              <span class="cf-pp-pillar-n">04</span>
+              <h3 class="cf-pp-pillar-t">The Outcome</h3>
+            </div>
+            <p class="cf-pp-pillar-b">First-day liquidity, holder quality, and post-launch retention — all tracked, attributed, and used to inform the next launch. Founders get speed; allocators get measurable distribution; the foundry gets a flywheel.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CTA SECTION ==================== -->
+    <section class="section cf-pp-section--blue">
+      <div class="container" style="text-align:center;">
+        <p class="cf-eyebrow" style="margin-bottom:20px;color:rgba(255,255,255,0.85);">Get in touch</p>
+        <h2 style="font-family:var(--font-serif);font-size:clamp(2rem,4vw,3rem);line-height:1.15;margin-bottom:24px;color:var(--white);">Build the next on-chain market leader with us.</h2>
+        <p style="font-size:1.1rem;line-height:1.6;color:rgba(255,255,255,0.9);margin-bottom:40px;max-width:540px;margin-left:auto;margin-right:auto;">Founders, operators and allocators — let's talk.</p>
+        <a href="#" class="cf-pp-cta-btn">Contact us</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <a href="../../index.html" class="footer-brand__logo">ChainFoundry</a>
+        <p class="footer-brand__desc">The execution layer for token-native companies. We build, launch and scale on-chain businesses.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56V14.9c0-1.32-.02-3.02-1.84-3.02-1.84 0-2.13 1.44-2.13 2.92v5.65H9.36V9h3.42v1.56h.05a3.75 3.75 0 013.38-1.86c3.62 0 4.29 2.38 4.29 5.48v6.27zM5.34 7.43a2.07 2.07 0 110-4.13 2.07 2.07 0 010 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.72V1.72C24 .77 23.21 0 22.23 0z"/></svg>
+          </a>
+          <a href="#" aria-label="Twitter / X">
+            <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zM17.083 19.77h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="../../foundry/index.html">The Foundry</a></li>
+          <li><a href="../../portfolio/index.html">Portfolio</a></li>
+          <li><a href="../../venture-growth/index.html">Venture &amp; Growth</a></li>
+          <li><a href="../../leadership/index.html">Leadership</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="../../about/index.html">About</a></li>
+          <li><a href="../../insights/index.html">Insights</a></li>
+          <li><a href="../../blog/index.html">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-subscribe">
+        <h4>Subscribe</h4>
+        <p>Select topics and stay current with our latest insights</p>
+        <form class="footer-subscribe__form" onsubmit="event.preventDefault();">
+          <input type="email" placeholder="Email address" aria-label="Email address">
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-divider"><div class="footer-divider__line"></div></div>
+    <div class="footer-bottom">
+      <div class="footer-bottom__left">
+        <p class="footer-app-text">ChainFoundry Insights — Get our latest thinking on your iPhone, iPad, or Android device.</p>
+      </div>
+      <div class="footer-bottom__right">
+        <div class="footer-legal">
+          <a href="#">Contact us</a>
+          <a href="#">Privacy policy</a>
+          <a href="#">Terms of use</a>
+        </div>
+        <p class="footer-copyright">&copy; 1996&ndash;2026 ChainFoundry, Inc. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../js/main.js"></script>
+</body>
+</html>

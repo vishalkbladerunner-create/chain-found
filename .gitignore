@@ -1,0 +1,14 @@
+# Exclude scraped reference content
+chain/
+
+# macOS
+.DS_Store
+
+# Logs
+.playwright-mcp/
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo

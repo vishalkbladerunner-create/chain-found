@@ -1,0 +1,140 @@
+/* ChainFoundry — McKinsey-inspired design tokens */
+:root{
+  --navy:#051c2c;
+  --navy-2:#0a2540;
+  --blue:#2251ff;
+  --blue-l:#4d7fff;
+  --blue-pale:#e6efff;
+  --white:#fff;
+  --gray:#f3f5f9;
+  --gray-2:#e6e9ed;
+  --text:#051c2c;
+  --muted:#666f7b;
+}
+
+@font-face{font-family:'McKinseySans';src:url('./fonts/McKinseySans-Regular.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:'McKinseySans';src:url('./fonts/McKinseySans-Medium.woff2') format('woff2');font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:'McKinseySans';src:url('./fonts/McKinseySans-Light.woff2') format('woff2');font-weight:300;font-style:normal;font-display:swap}
+@font-face{font-family:'Bower';src:url('./fonts/Bower-Bold.woff2') format('woff2');font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:'Bower';src:url('./fonts/Bower-BoldItalic.woff2') format('woff2');font-weight:700;font-style:italic;font-display:swap}
+
+*,*::before,*::after{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--white);color:var(--text);font-family:'McKinseySans',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;-webkit-font-smoothing:antialiased;line-height:1.5;font-size:16px}
+img{max-width:100%;display:block}
+a{color:var(--blue);text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* Header */
+.cf-header{position:sticky;top:0;z-index:100;background:var(--navy);color:#fff;padding:18px 40px;display:flex;align-items:center;gap:32px}
+.cf-header__logo{display:inline-block;width:200px;height:42px;background:url('./cf_logo.svg') left center / contain no-repeat;filter:invert(1) brightness(2);text-indent:-9999px;overflow:hidden}
+.cf-header__nav{display:flex;gap:28px;flex:1;justify-content:center}
+.cf-header__nav a{color:#fff;font-size:15px;font-weight:400;padding:6px 0;border-bottom:2px solid transparent;transition:border-color .15s}
+.cf-header__nav a:hover{border-bottom-color:var(--blue-l);text-decoration:none}
+.cf-header__nav a.active{border-bottom-color:var(--blue-l)}
+.cf-header__cta{color:#fff;font-size:13px;letter-spacing:.5px}
+.cf-header__cta a{color:#fff}
+
+/* Hero */
+.cf-hero{background:linear-gradient(135deg,#051c2c 0%,#0a2540 45%,#2251ff 130%);color:#fff;padding:80px 40px 100px;position:relative;overflow:hidden}
+.cf-hero::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 70% 20%,rgba(77,127,255,.25),transparent 60%);pointer-events:none}
+.cf-hero__inner{max-width:1280px;margin:0 auto;position:relative;z-index:1}
+.cf-hero__eyebrow{font-size:13px;letter-spacing:2px;text-transform:uppercase;color:var(--blue-l);font-weight:500;margin-bottom:24px}
+.cf-hero__title{font-family:'Bower',Georgia,serif;font-style:italic;font-weight:700;font-size:clamp(2.4rem,5vw,4.5rem);line-height:1.05;margin:0 0 24px;letter-spacing:-.01em;max-width:900px}
+.cf-hero__sub{font-size:clamp(1rem,1.4vw,1.25rem);font-weight:300;line-height:1.55;max-width:680px;color:#d4dde6}
+
+/* Container / sections */
+.cf-section{padding:80px 40px}
+.cf-section--gray{background:var(--gray)}
+.cf-section--navy{background:var(--navy);color:#fff}
+.cf-container{max-width:1280px;margin:0 auto}
+.cf-section__title{font-family:'Bower',Georgia,serif;font-style:italic;font-weight:700;font-size:clamp(2rem,3.5vw,3rem);line-height:1.1;margin:0 0 16px;letter-spacing:-.01em}
+.cf-section__sub{font-size:1.05rem;color:var(--muted);max-width:700px;margin:0 0 48px;line-height:1.55}
+.cf-section--navy .cf-section__sub{color:#a8b3c1}
+
+/* Grid */
+.cf-grid{display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.cf-grid--3{grid-template-columns:repeat(3,1fr)}
+.cf-grid--2{grid-template-columns:repeat(2,1fr)}
+@media(max-width:900px){.cf-grid--3,.cf-grid--2{grid-template-columns:1fr}}
+
+/* Card */
+.cf-card{background:#fff;border:1px solid var(--gray-2);border-radius:4px;overflow:hidden;display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s}
+.cf-card:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(5,28,44,.12)}
+.cf-card__media{aspect-ratio:16/10;background:var(--gray) center / cover no-repeat;width:100%}
+.cf-card__body{padding:24px}
+.cf-card__eyebrow{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--blue);font-weight:500;margin-bottom:8px}
+.cf-card__title{font-family:'Bower',Georgia,serif;font-weight:700;font-size:1.4rem;margin:0 0 12px;color:var(--navy);line-height:1.2}
+.cf-card__desc{font-size:.95rem;color:var(--muted);line-height:1.55;margin:0}
+.cf-card__cta{margin-top:16px;font-size:.85rem;font-weight:500;color:var(--blue);letter-spacing:.5px;text-transform:uppercase}
+
+/* Bento (large hero card) */
+.cf-bento{display:grid;grid-template-columns:1.4fr 1fr;gap:24px;margin-bottom:24px}
+.cf-bento__main{aspect-ratio:16/10;background:var(--gray) center / cover no-repeat;border-radius:4px;position:relative;overflow:hidden;color:#fff;padding:40px;display:flex;flex-direction:column;justify-content:flex-end}
+.cf-bento__main::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(5,28,44,.85) 100%)}
+.cf-bento__main > *{position:relative;z-index:1}
+.cf-bento__main h3{font-family:'Bower',Georgia,serif;font-size:2rem;margin:0 0 12px;line-height:1.15}
+.cf-bento__main p{margin:0;color:#d4dde6;max-width:480px}
+@media(max-width:900px){.cf-bento{grid-template-columns:1fr}}
+
+/* CTA */
+.cf-cta{background:linear-gradient(135deg,#0a2540 0%,#2251ff 100%);color:#fff;padding:80px 40px;text-align:center}
+.cf-cta h2{font-family:'Bower',Georgia,serif;font-style:italic;font-size:clamp(2rem,3.5vw,3rem);margin:0 0 16px}
+.cf-cta p{font-size:1.1rem;color:#d4dde6;max-width:640px;margin:0 auto 32px}
+.cf-btn{display:inline-block;padding:14px 32px;background:#fff;color:var(--navy);border-radius:2px;font-weight:500;font-size:.95rem;letter-spacing:.5px;text-transform:uppercase}
+.cf-btn:hover{background:var(--blue-pale);text-decoration:none}
+.cf-btn--ghost{background:transparent;color:#fff;border:1px solid #fff}
+.cf-btn--ghost:hover{background:#fff;color:var(--navy)}
+
+/* Detail page sections */
+.cf-detail-hero{background:linear-gradient(135deg,#051c2c 0%,#0a2540 60%,#1a3a8a 100%);color:#fff;padding:120px 40px 80px;position:relative;overflow:hidden}
+.cf-detail-hero__back{display:inline-block;color:#a8c2ff;font-size:.9rem;letter-spacing:.5px;margin-bottom:32px;position:relative;z-index:1}
+.cf-detail-hero__back:hover{color:#fff;text-decoration:none}
+.cf-detail-hero__grid{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1.4fr 1fr;gap:48px;align-items:center;position:relative;z-index:1}
+.cf-detail-hero__eyebrow{font-size:13px;letter-spacing:2px;text-transform:uppercase;color:var(--blue-l);margin-bottom:16px}
+.cf-detail-hero h1{font-family:'Bower',Georgia,serif;font-style:italic;font-size:clamp(3rem,6vw,5.5rem);line-height:.95;margin:0 0 24px}
+.cf-detail-hero p{font-size:1.2rem;max-width:720px;color:#d4dde6;line-height:1.5;margin:0}
+.cf-detail-hero__logo-wrap{display:flex;justify-content:center;align-items:center}
+.cf-detail-hero__logo{width:280px;height:280px;border-radius:50%;background:#fff;box-shadow:0 24px 60px rgba(0,0,0,.35);display:flex;align-items:center;justify-content:center;overflow:hidden}
+.cf-detail-hero__logo img{width:100%;height:100%;object-fit:cover;object-position:center;display:block}
+@media(max-width:900px){.cf-detail-hero__grid{grid-template-columns:1fr;text-align:center}.cf-detail-hero__logo{width:200px;height:200px;margin:32px auto 0}}
+
+/* Portfolio card with logo (smaller circular thumbnail in card media area) */
+.cf-card__logo-media{aspect-ratio:16/10;background:linear-gradient(135deg,#0a2540 0%,#1a3a8a 100%);display:flex;align-items:center;justify-content:center}
+.cf-card__logo-media img{width:55%;height:55%;object-fit:contain;background:#fff;border-radius:50%;padding:18px;box-shadow:0 12px 28px rgba(0,0,0,.25)}
+
+.cf-prose{max-width:780px;margin:0 auto;font-size:1.05rem;line-height:1.7;color:var(--text)}
+.cf-prose h2{font-family:'Bower',Georgia,serif;font-style:italic;font-size:2rem;margin:48px 0 16px;color:var(--navy)}
+.cf-prose h3{font-family:'McKinseySans',sans-serif;font-weight:500;font-size:1.3rem;margin:32px 0 12px;color:var(--navy)}
+.cf-prose p{margin:0 0 18px;color:#3a4654}
+.cf-prose ul{padding-left:20px;margin:0 0 18px;color:#3a4654}
+.cf-prose ul li{margin-bottom:8px}
+
+/* Stats row */
+.cf-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:24px;margin:48px 0}
+.cf-stat{padding:24px;background:#fff;border-left:3px solid var(--blue)}
+.cf-stat__num{font-family:'Bower',Georgia,serif;font-weight:700;font-size:2.4rem;color:var(--navy);line-height:1}
+.cf-stat__label{font-size:.9rem;color:var(--muted);margin-top:8px;letter-spacing:.5px}
+
+/* Footer */
+.cf-footer{background:var(--navy);color:#a8b3c1;padding:48px 40px 32px;font-size:.9rem}
+.cf-footer__inner{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:32px}
+.cf-footer__logo{display:inline-block;width:180px;height:36px;background:url('./cf_logo.svg') left center / contain no-repeat;filter:invert(1) brightness(2);margin-bottom:16px}
+.cf-footer h4{color:#fff;font-size:.9rem;font-weight:500;margin:0 0 16px;text-transform:uppercase;letter-spacing:1px}
+.cf-footer ul{list-style:none;padding:0;margin:0}
+.cf-footer ul li{margin-bottom:10px}
+.cf-footer a{color:#a8b3c1}
+.cf-footer a:hover{color:#fff}
+.cf-footer__copy{max-width:1280px;margin:32px auto 0;padding-top:24px;border-top:1px solid #1a3445;color:#7b8694;font-size:.8rem}
+@media(max-width:900px){.cf-footer__inner{grid-template-columns:1fr 1fr}}
+
+/* Breadcrumb */
+.cf-breadcrumb{font-size:.85rem;color:var(--muted);padding:24px 40px 0;max-width:1280px;margin:0 auto}
+.cf-breadcrumb a{color:var(--muted)}
+
+/* Remove dark-theme text-shadow from GenericItem hover cards — the shadow
+   is meant for hero text on background images, not for solid-background cards.
+   Without this, the shadow looks awkward when the white hover bg appears. */
+[class*="GenericItem_mck-c-generic-item--with-hover-effect__"] [class*="mdc-c-heading___"],
+[class*="GenericItem_mck-c-generic-item--with-hover-effect__"] [class*="mdc-c-description___"] {
+  text-shadow: none !important;
+}

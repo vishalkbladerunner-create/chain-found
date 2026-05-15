@@ -1,0 +1,163 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 600" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <!-- Warm cream-to-peach gradient -->
+    <linearGradient id="ld-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef9f3"/>
+      <stop offset="40%" stop-color="#fff5ed"/>
+      <stop offset="100%" stop-color="#ffe8d6"/>
+    </linearGradient>
+
+    <!-- Soft warm orb -->
+    <radialGradient id="ld-orb1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff9f68" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#ff9f68" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="ld-orb2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffb088" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#ffb088" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="ld-orb3" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#e85d4e" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#e85d4e" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Organic blob gradient -->
+    <linearGradient id="ld-blob1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffcdb2" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#ffb4a2" stop-opacity="0.15"/>
+    </linearGradient>
+    <linearGradient id="ld-blob2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e5989b" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#b5838d" stop-opacity="0.08"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Warm base background -->
+  <rect width="1920" height="600" fill="url(#ld-bg)"/>
+
+  <!-- Large soft orbs -->
+  <circle cx="300" cy="150" r="350" fill="url(#ld-orb1)"/>
+  <circle cx="1700" cy="450" r="400" fill="url(#ld-orb2)"/>
+  <circle cx="1000" cy="100" r="250" fill="url(#ld-orb3)"/>
+  <circle cx="800" cy="500" r="300" fill="url(#ld-orb1)"/>
+
+  <!-- Organic blob shapes (abstract people/connection) -->
+  <path d="M 200 350 
+           C 200 280, 280 220, 380 240 
+           C 480 260, 520 340, 460 400 
+           C 400 460, 300 450, 250 420 
+           C 200 390, 200 380, 200 350 Z" 
+        fill="url(#ld-blob1)"/>
+
+  <path d="M 1450 200 
+           C 1450 140, 1520 100, 1600 120 
+           C 1680 140, 1720 200, 1660 260 
+           C 1600 320, 1500 300, 1470 270 
+           C 1440 240, 1450 230, 1450 200 Z" 
+        fill="url(#ld-blob2)"/>
+
+  <path d="M 1100 400 
+           C 1100 350, 1160 310, 1240 330 
+           C 1320 350, 1360 410, 1300 460 
+           C 1240 510, 1140 490, 1120 460 
+           C 1100 430, 1100 420, 1100 400 Z" 
+        fill="url(#ld-blob1)" opacity="0.6"/>
+
+  <path d="M 600 150 
+           C 600 100, 660 70, 720 90 
+           C 780 110, 800 160, 760 200 
+           C 720 240, 640 220, 620 200 
+           C 600 180, 600 170, 600 150 Z" 
+        fill="url(#ld-blob2)" opacity="0.5"/>
+
+  <!-- Connected circles (people nodes) -->
+  <g stroke="#e5989b" stroke-width="1.5" fill="none" opacity="0.25" stroke-linecap="round">
+    <!-- Network cluster 1 (left) -->
+    <line x1="280" y1="320" x2="380" y2="280"/>
+    <line x1="380" y1="280" x2="480" y2="340"/>
+    <line x1="280" y1="320" x2="340" y2="420"/>
+    <line x1="340" y1="420" x2="450" y2="400"/>
+    <line x1="480" y1="340" x2="450" y2="400"/>
+    <line x1="380" y1="280" x2="340" y2="420"/>
+
+    <!-- Network cluster 2 (right) -->
+    <line x1="1380" y1="220" x2="1480" y2="180"/>
+    <line x1="1480" y1="180" x2="1580" y2="240"/>
+    <line x1="1380" y1="220" x2="1440" y2="320"/>
+    <line x1="1440" y1="320" x2="1550" y2="300"/>
+    <line x1="1580" y1="240" x2="1550" y2="300"/>
+
+    <!-- Bridge -->
+    <line x1="480" y1="340" x2="700" y2="300"/>
+    <line x1="700" y1="300" x2="900" y2="280"/>
+    <line x1="900" y1="280" x2="1150" y2="260"/>
+    <line x1="1150" y1="260" x2="1380" y2="220"/>
+  </g>
+
+  <!-- People nodes (circles with warm tones) -->
+  <g>
+    <circle cx="280" cy="320" r="10" fill="#e5989b" opacity="0.3"/>
+    <circle cx="380" cy="280" r="14" fill="#e85d4e" opacity="0.25"/>
+    <circle cx="480" cy="340" r="11" fill="#e5989b" opacity="0.3"/>
+    <circle cx="340" cy="420" r="16" fill="#ff9f68" opacity="0.25"/>
+    <circle cx="450" cy="400" r="12" fill="#e5989b" opacity="0.3"/>
+
+    <circle cx="700" cy="300" r="9" fill="#e5989b" opacity="0.2"/>
+    <circle cx="900" cy="280" r="11" fill="#e85d4e" opacity="0.2"/>
+    <circle cx="1150" cy="260" r="10" fill="#e5989b" opacity="0.2"/>
+
+    <circle cx="1380" cy="220" r="13" fill="#e5989b" opacity="0.3"/>
+    <circle cx="1480" cy="180" r="16" fill="#ff9f68" opacity="0.25"/>
+    <circle cx="1580" cy="240" r="11" fill="#e5989b" opacity="0.3"/>
+    <circle cx="1440" cy="320" r="14" fill="#e85d4e" opacity="0.25"/>
+    <circle cx="1550" cy="300" r="10" fill="#e5989b" opacity="0.3"/>
+  </g>
+
+  <!-- Node halos -->
+  <g fill="none" stroke="#e5989b" opacity="0.15" stroke-width="1">
+    <circle cx="380" cy="280" r="28"/>
+    <circle cx="340" cy="420" r="32"/>
+    <circle cx="1480" cy="180" r="35"/>
+    <circle cx="1440" cy="320" r="30"/>
+  </g>
+
+  <!-- Flowing organic curves (connection paths) -->
+  <g stroke="#e5989b" stroke-width="2" fill="none" opacity="0.12" stroke-linecap="round">
+    <path d="M 100 450 Q 300 350 500 420 T 900 380"/>
+    <path d="M 1100 480 Q 1300 400 1500 450 T 1800 400"/>
+    <path d="M 0 200 Q 200 150 400 200 T 700 180"/>
+  </g>
+
+  <!-- Abstract arrow/progress shapes (leadership direction) -->
+  <g fill="none" stroke="#e85d4e" opacity="0.15" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 650 200 L 690 200 L 680 190 M 690 200 L 680 210" stroke-width="1.5"/>
+    <path d="M 750 180 L 790 180 L 780 170 M 790 180 L 780 190" stroke-width="1.5"/>
+    <path d="M 850 160 L 890 160 L 880 150 M 890 160 L 880 170" stroke-width="1.5"/>
+  </g>
+
+  <!-- Small decorative dots (warm palette) -->
+  <g opacity="0.25">
+    <circle cx="150" cy="200" r="3" fill="#e5989b"/>
+    <circle cx="200" cy="150" r="2" fill="#ff9f68"/>
+    <circle cx="550" cy="180" r="2.5" fill="#e5989b"/>
+    <circle cx="650" cy="450" r="3" fill="#e85d4e"/>
+    <circle cx="1050" cy="150" r="2" fill="#ff9f68"/>
+    <circle cx="1250" cy="480" r="3" fill="#e5989b"/>
+    <circle cx="1650" cy="350" r="2.5" fill="#e85d4e"/>
+    <circle cx="1800" cy="250" r="2" fill="#ff9f68"/>
+    <circle cx="950" cy="520" r="3" fill="#e5989b"/>
+    <circle cx="350" cy="520" r="2" fill="#e85d4e"/>
+  </g>
+
+  <!-- Subtle ring accents -->
+  <g fill="none" stroke="#e5989b" stroke-width="0.8" opacity="0.1">
+    <circle cx="500" cy="250" r="50"/>
+    <circle cx="500" cy="250" r="70"/>
+    <circle cx="1400" cy="350" r="55"/>
+    <circle cx="1400" cy="350" r="78"/>
+  </g>
+
+  <!-- Dashed connection arcs -->
+  <path d="M 520 320 Q 700 280 850 340" stroke="#e5989b" stroke-width="1" fill="none" opacity="0.1" stroke-dasharray="8 6"/>
+  <path d="M 1050 300 Q 1200 260 1350 300" stroke="#e5989b" stroke-width="1" fill="none" opacity="0.1" stroke-dasharray="8 6"/>
+</svg>
