@@ -308,6 +308,26 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .site-header.header--light .hamburger span {
   background: var(--navy);
 }
+/* Dark dropdown for light header pages */
+.site-header.header--light .desktop-nav__dropdown {
+  background: var(--navy);
+  color: var(--white);
+  border-top-color: var(--blue-light);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.35);
+}
+.site-header.header--light .dropdown__header {
+  color: var(--white);
+}
+.site-header.header--light .dropdown__header:hover {
+  color: var(--blue-light);
+  border-bottom-color: var(--blue-light);
+}
+.site-header.header--light .dropdown__link {
+  color: rgba(255,255,255,0.7);
+}
+.site-header.header--light .dropdown__link:hover {
+  color: var(--white);
+}
 
 @media (max-width: 1024px) {
   .desktop-nav { display: none; }
