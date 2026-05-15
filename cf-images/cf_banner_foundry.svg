@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 600" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <!-- Deep forge gradient -->
+    <linearGradient id="fr-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1b2a"/>
+      <stop offset="45%" stop-color="#122536"/>
+      <stop offset="100%" stop-color="#0a1520"/>
+    </linearGradient>
+
+    <!-- Molten amber glow -->
+    <radialGradient id="fr-amber" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f4a261" stop-opacity="0.18"/>
+      <stop offset="50%" stop-color="#e76f51" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#e76f51" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Blue forge accent glow -->
+    <radialGradient id="fr-blue" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#2563eb" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#2563eb" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Molten stream gradient -->
+    <linearGradient id="fr-stream" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f4a261" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#f4a261" stop-opacity="0.4"/>
+      <stop offset="70%" stop-color="#e76f51" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#e76f51" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Hammer glow -->
+    <radialGradient id="fr-hammer" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f4a261" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#f4a261" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Base dark forge background -->
+  <rect width="1920" height="600" fill="url(#fr-bg)"/>
+
+  <!-- Large ambient glow orbs -->
+  <circle cx="400" cy="480" r="400" fill="url(#fr-amber)"/>
+  <circle cx="1600" cy="150" r="350" fill="url(#fr-blue)"/>
+  <circle cx="950" cy="80" r="250" fill="url(#fr-amber)" opacity="0.6"/>
+
+  <!-- Molten flowing streams -->
+  <g fill="none" stroke-linecap="round">
+    <!-- Main stream 1 -->
+    <path d="M 0 350 Q 300 280 600 340 T 1200 300 T 1920 380" stroke="url(#fr-stream)" stroke-width="3" opacity="0.6"/>
+    <path d="M 0 370 Q 300 300 600 360 T 1200 320 T 1920 400" stroke="url(#fr-stream)" stroke-width="2" opacity="0.35"/>
+
+    <!-- Main stream 2 (upper) -->
+    <path d="M 0 200 Q 400 150 700 210 T 1400 170 T 1920 230" stroke="url(#fr-stream)" stroke-width="2.5" opacity="0.4"/>
+    <path d="M 0 215 Q 400 165 700 225 T 1400 185 T 1920 245" stroke="url(#fr-stream)" stroke-width="1.5" opacity="0.25"/>
+
+    <!-- Lower stream -->
+    <path d="M 200 500 Q 500 450 800 510 T 1500 470 T 1920 530" stroke="url(#fr-stream)" stroke-width="2" opacity="0.3"/>
+  </g>
+
+  <!-- Abstract anvil / forge block shapes (geometric) -->
+  <g opacity="0.7">
+    <!-- Anvil shape left -->
+    <polygon points="180,420 260,380 340,420 340,460 260,500 180,460" fill="#1a2f42"/>
+    <polygon points="180,420 260,380 260,420 180,460" fill="#142638"/>
+    <polygon points="260,380 340,420 340,460 260,420" fill="#1e3850"/>
+    <!-- Anvil top glow edge -->
+    <line x1="180" y1="420" x2="260" y2="380" stroke="#f4a261" stroke-width="1.5" opacity="0.5"/>
+    <line x1="260" y1="380" x2="340" y2="420" stroke="#f4a261" stroke-width="1.5" opacity="0.3"/>
+
+    <!-- Anvil shape right -->
+    <polygon points="1580,320 1660,280 1740,320 1740,360 1660,400 1580,360" fill="#1a2f42"/>
+    <polygon points="1580,320 1660,280 1660,320 1580,360" fill="#142638"/>
+    <polygon points="1660,280 1740,320 1740,360 1660,320" fill="#1e3850"/>
+    <line x1="1580" y1="320" x2="1660" y2="280" stroke="#f4a261" stroke-width="1.5" opacity="0.4"/>
+    <line x1="1660" y1="280" x2="1740" y2="320" stroke="#f4a261" stroke-width="1.5" opacity="0.25"/>
+  </g>
+
+  <!-- Spark particles (forge sparks) -->
+  <g fill="#f4a261" opacity="0.5">
+    <circle cx="260" cy="360" r="3"/>
+    <circle cx="280" cy="340" r="2"/>
+    <circle cx="240" cy="350" r="2.5"/>
+    <circle cx="300" cy="370" r="1.5"/>
+    <circle cx="220" cy="380" r="2"/>
+    <circle cx="1660" cy="260" r="3"/>
+    <circle cx="1680" cy="240" r="2"/>
+    <circle cx="1640" cy="250" r="2.5"/>
+    <circle cx="1700" cy="270" r="1.5"/>
+  </g>
+
+  <!-- Rising spark trails -->
+  <g stroke="#f4a261" stroke-width="1" fill="none" opacity="0.2" stroke-linecap="round">
+    <path d="M 260 360 Q 265 320 255 280"/>
+    <path d="M 280 340 Q 285 300 275 260"/>
+    <path d="M 240 350 Q 235 310 245 270"/>
+    <path d="M 1660 260 Q 1655 220 1665 180"/>
+    <path d="M 1680 240 Q 1685 200 1675 160"/>
+  </g>
+
+  <!-- Geometric mold / block shapes scattered -->
+  <g fill="#1a2f42" stroke="#f4a261" stroke-width="0.6" opacity="0.35">
+    <rect x="520" y="180" width="40" height="40" transform="rotate(15 540 200)"/>
+    <rect x="580" y="200" width="30" height="30" transform="rotate(-10 595 215)"/>
+    <rect x="1300" y="420" width="35" height="35" transform="rotate(20 1317 437)"/>
+    <rect x="1250" y="450" width="25" height="25" transform="rotate(-15 1262 462)"/>
+  </g>
+
+  <!-- Grid lines (forge floor) -->
+  <g stroke="#2563eb" stroke-width="0.5" fill="none" opacity="0.08">
+    <line x1="0" y1="520" x2="1920" y2="520"/>
+    <line x1="0" y1="540" x2="1920" y2="540"/>
+    <line x1="0" y1="560" x2="1920" y2="560"/>
+    <line x1="0" y1="580" x2="1920" y2="580"/>
+    <line x1="400" y1="500" x2="400" y2="600"/>
+    <line x1="800" y1="500" x2="800" y2="600"/>
+    <line x1="1200" y1="500" x2="1200" y2="600"/>
+    <line x1="1600" y1="500" x2="1600" y2="600"/>
+  </g>
+
+  <!-- Heat haze rings (subtle) -->
+  <g fill="none" stroke="#f4a261" stroke-width="0.8" opacity="0.08">
+    <circle cx="260" cy="420" r="60"/>
+    <circle cx="260" cy="420" r="90"/>
+    <circle cx="1660" cy="320" r="55"/>
+    <circle cx="1660" cy="320" r="85"/>
+  </g>
+
+  <!-- Accent dots scattered -->
+  <g fill="#2563eb" opacity="0.2">
+    <circle cx="100" cy="100" r="2.5"/>
+    <circle cx="500" cy="80" r="2"/>
+    <circle cx="850" cy="200" r="3"/>
+    <circle cx="1250" cy="100" r="2"/>
+    <circle cx="1450" cy="250" r="2.5"/>
+    <circle cx="1850" cy="150" r="2"/>
+    <circle cx="300" cy="550" r="3"/>
+    <circle cx="700" cy="520" r="2"/>
+    <circle cx="1000" cy="560" r="2.5"/>
+    <circle cx="1400" cy="540" r="2"/>
+    <circle cx="1800" cy="500" r="2.5"/>
+  </g>
+
+  <!-- Diagonal heat lines -->
+  <g stroke="#e76f51" stroke-width="0.7" fill="none" opacity="0.1">
+    <line x1="750" y1="350" x2="850" y2="250"/>
+    <line x1="770" y1="350" x2="870" y2="250"/>
+    <line x1="790" y1="350" x2="890" y2="250"/>
+    <line x1="810" y1="350" x2="910" y2="250"/>
+    <line x1="830" y1="350" x2="930" y2="250"/>
+  </g>
+</svg>
