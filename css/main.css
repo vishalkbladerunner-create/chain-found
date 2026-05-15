@@ -1369,7 +1369,18 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   display: block;
   text-align: left;
   cursor: pointer;
+  opacity: 0;
+  transform: translateY(-20px);
   transition: background 0.3s ease;
+}
+.capabilities-section.is-visible .capability-card--1 {
+  animation: impact-card-drop 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0ms forwards;
+}
+.capabilities-section.is-visible .capability-card--2 {
+  animation: impact-card-drop 0.5s cubic-bezier(0.4, 0, 0.2, 1) 150ms forwards;
+}
+.capabilities-section.is-visible .capability-card--3 {
+  animation: impact-card-drop 0.5s cubic-bezier(0.4, 0, 0.2, 1) 300ms forwards;
 }
 .capability-card:hover {
   background: var(--white);
