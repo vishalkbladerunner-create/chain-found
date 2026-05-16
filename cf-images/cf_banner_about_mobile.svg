@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="abm-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f8ff"/>
+      <stop offset="50%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#eef4ff"/>
+    </linearGradient>
+    <radialGradient id="abm-orb" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#e0ecff" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#abm-bg)"/>
+  <circle cx="150" cy="200" r="350" fill="url(#abm-orb)"/>
+  <circle cx="700" cy="850" r="400" fill="url(#abm-orb)"/>
+  <g fill="none" stroke="#c8d8f5" stroke-width="0.9" opacity="0.7">
+    <circle cx="650" cy="280" r="50"/>
+    <circle cx="650" cy="280" r="85"/>
+    <circle cx="650" cy="280" r="120"/>
+    <circle cx="650" cy="280" r="155"/>
+  </g>
+  <g fill="none" stroke="#c8d8f5" stroke-width="0.9" opacity="0.6">
+    <circle cx="180" cy="750" r="45"/>
+    <circle cx="180" cy="750" r="80"/>
+    <circle cx="180" cy="750" r="115"/>
+    <circle cx="180" cy="750" r="150"/>
+  </g>
+  <path d="M 0 420 Q 200 380 400 420 T 800 420" fill="none" stroke="#d6e3fa" stroke-width="1.2"/>
+  <path d="M 0 480 Q 200 440 400 480 T 800 480" fill="none" stroke="#c8d8f5" stroke-width="0.9"/>
+  <path d="M 0 540 Q 200 500 400 540 T 800 540" fill="none" stroke="#e8f0ff" stroke-width="1"/>
+  <g stroke="#d6e3fa" stroke-width="0.7" fill="none" opacity="0.5">
+    <line x1="300" y1="0" x2="420" y2="150"/>
+    <line x1="320" y1="0" x2="440" y2="150"/>
+    <line x1="340" y1="0" x2="460" y2="150"/>
+  </g>
+  <g fill="#a8c2f0">
+    <circle cx="220" cy="320" r="2.5"/>
+    <circle cx="260" cy="360" r="2"/>
+    <circle cx="300" cy="300" r="3"/>
+    <circle cx="340" cy="340" r="2"/>
+    <circle cx="380" cy="380" r="2.5"/>
+    <circle cx="450" cy="680" r="3"/>
+    <circle cx="490" cy="720" r="2"/>
+    <circle cx="530" cy="660" r="2.5"/>
+    <circle cx="570" cy="700" r="2"/>
+    <circle cx="610" cy="740" r="3"/>
+    <circle cx="180" cy="580" r="2.5"/>
+    <circle cx="220" cy="620" r="2"/>
+    <circle cx="260" cy="560" r="3"/>
+    <circle cx="300" cy="600" r="2"/>
+    <circle cx="340" cy="640" r="2.5"/>
+  </g>
+  <g fill="#c8d8f5" opacity="0.4">
+    <rect x="100" y="120" width="6" height="6"/>
+    <rect x="120" y="120" width="6" height="6"/>
+    <rect x="140" y="120" width="6" height="6"/>
+    <rect x="100" y="140" width="6" height="6"/>
+    <rect x="120" y="140" width="6" height="6"/>
+    <rect x="140" y="140" width="6" height="6"/>
+    <rect x="100" y="160" width="6" height="6"/>
+    <rect x="120" y="160" width="6" height="6"/>
+    <rect x="140" y="160" width="6" height="6"/>
+  </g>
+  <path d="M 550 0 Q 620 350 700 1000" fill="none" stroke="#d6e3fa" stroke-width="1"/>
+  <path d="M 600 0 Q 670 350 750 1000" fill="none" stroke="#e8f0ff" stroke-width="0.8"/>
+  <g fill="none" stroke="#c8d8f5" stroke-width="0.9" opacity="0.6">
+    <circle cx="220" cy="520" r="18"/>
+    <circle cx="500" cy="820" r="22"/>
+    <circle cx="720" cy="620" r="16"/>
+  </g>
+  <g stroke="#c8d8f5" stroke-width="1" fill="none">
+    <path d="M 40 40 L 40 75 L 75 75"/>
+    <path d="M 760 960 L 760 925 L 725 925"/>
+  </g>
+</svg>

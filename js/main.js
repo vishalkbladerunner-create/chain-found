@@ -51,6 +51,107 @@
   });
 
   /* ---- Mega Menu Panel Switching ---- */
+  function isMobileMenu() {
+    return window.innerWidth <= 768;
+  }
+
+  function closeMobileDropdown(item) {
+    if (!item) return;
+    var dropdown = item.nextElementSibling;
+    if (dropdown && dropdown.classList.contains('mega-dropdown')) {
+      dropdown.classList.remove('is-open');
+      item.classList.remove('is-open');
+      item.setAttribute('aria-expanded', 'false');
+      setTimeout(function () {
+        if (dropdown && dropdown.parentNode) {
+          dropdown.parentNode.removeChild(dropdown);
+        }
+      }, 350);
+    }
+  }
+
+  function removeAllMobileDropdowns() {
+    document.querySelectorAll('.mega-dropdown').forEach(function (dd) {
+      dd.classList.remove('is-open');
+      setTimeout(function () {
+        if (dd && dd.parentNode) dd.parentNode.removeChild(dd);
+      }, 350);
+    });
+    megaMenuItems.forEach(function (item) {
+      item.classList.remove('is-open');
+      item.setAttribute('aria-expanded', 'false');
+    });
+  }
+
+  function renderMobileDropdown(panelId, targetItem) {
+    var sourcePanel = document.getElementById('panel-' + panelId);
+    if (!sourcePanel || !targetItem) return;
+
+    var dropdown = document.createElement('div');
+    dropdown.className = 'mega-dropdown';
+    dropdown.setAttribute('role', 'region');
+    dropdown.setAttribute('aria-label', targetItem.textContent.trim() + ' submenu');
+
+    // Extract links from the source panel
+    var grid = sourcePanel.querySelector('.mega-panel__grid');
+    var desc = sourcePanel.querySelector('.mega-panel__desc');
+    var header = sourcePanel.querySelector('.mega-panel__header');
+
+    if (grid) {
+      grid.querySelectorAll('.mega-panel__link').forEach(function (link) {
+        var a = document.createElement('a');
+        a.href = link.href;
+        a.className = 'mega-dropdown__link';
+        a.textContent = link.textContent;
+        dropdown.appendChild(a);
+      });
+    }
+    if (desc) {
+      var p = document.createElement('p');
+      p.className = 'mega-dropdown__desc';
+      p.textContent = desc.textContent;
+      dropdown.appendChild(p);
+    }
+    if (header) {
+      var viewAll = document.createElement('a');
+      viewAll.href = header.href;
+      viewAll.className = 'mega-dropdown__link mega-dropdown__link--highlight';
+      viewAll.textContent = header.textContent.trim() || 'View all';
+      dropdown.appendChild(viewAll);
+    }
+
+    targetItem.parentNode.insertBefore(dropdown, targetItem.nextSibling);
+    // Force reflow
+    void dropdown.offsetHeight;
+    dropdown.classList.add('is-open');
+  }
+
+  function toggleMobileDropdown(item) {
+    var panelId = item.getAttribute('data-panel');
+    var existingDropdown = item.nextElementSibling;
+    var isAlreadyOpen = existingDropdown && existingDropdown.classList.contains('mega-dropdown') && existingDropdown.classList.contains('is-open');
+
+    if (isAlreadyOpen) {
+      closeMobileDropdown(item);
+      return;
+    }
+
+    // Close any other open dropdown first
+    megaMenuItems.forEach(function (otherItem) {
+      if (otherItem !== item) {
+        closeMobileDropdown(otherItem);
+      }
+    });
+
+    // Desktop panel activation (still needed)
+    activatePanel(panelId);
+
+    // Open this one
+    item.classList.add('is-open');
+    item.setAttribute('aria-expanded', 'true');
+    renderMobileDropdown(panelId, item);
+  }
+
   function activatePanel(panelId) {
     if (!panelId) return;
     megaMenuItems.forEach(function (item) {
@@ -68,12 +169,27 @@
 
   megaMenuItems.forEach(function (item) {
     item.addEventListener('mouseenter', function () {
-      activatePanel(item.getAttribute('data-panel'));
+      if (!isMobileMenu()) {
+        activatePanel(item.getAttribute('data-panel'));
+      }
     });
-    item.addEventListener('click', function () {
-      activatePanel(item.getAttribute('data-panel'));
+    item.addEventListener('click', function (e) {
+      if (isMobileMenu()) {
+        e.preventDefault();
+        e.stopPropagation();
+        toggleMobileDropdown(item);
+      } else {
+        activatePanel(item.getAttribute('data-panel'));
+      }
     });
   });
+
+  // Close mobile dropdowns when closing the menu
+  var origCloseMegaMenu = closeMegaMenu;
+  closeMegaMenu = function () {
+    removeAllMobileDropdowns();
+    origCloseMegaMenu();
+  };
 
   /* ---- Mobile Drawer ---- */
   var drawer = document.getElementById('mobile-drawer');

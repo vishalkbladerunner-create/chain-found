@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="pfm-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="50%" stop-color="#0d1f35"/>
+      <stop offset="100%" stop-color="#061220"/>
+    </linearGradient>
+    <linearGradient id="pfm-top" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a5f" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#162d4a" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="pfm-left" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563eb" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#1e3a5f" stop-opacity="0.5"/>
+    </linearGradient>
+    <linearGradient id="pfm-right" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1e3a5f" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#0f2540" stop-opacity="0.7"/>
+    </linearGradient>
+    <linearGradient id="pfm-glow-top" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4d7fff" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#2563eb" stop-opacity="0.4"/>
+    </linearGradient>
+    <linearGradient id="pfm-glow-left" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#82b1ff" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#4d7fff" stop-opacity="0.3"/>
+    </linearGradient>
+    <linearGradient id="pfm-glow-right" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563eb" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#1a3a6e" stop-opacity="0.5"/>
+    </linearGradient>
+    <radialGradient id="pfm-orb1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#2563eb" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#2563eb" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="pfm-orb2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00d4ff" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#00d4ff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#pfm-bg)"/>
+  <circle cx="650" cy="180" r="300" fill="url(#pfm-orb1)"/>
+  <circle cx="120" cy="800" r="250" fill="url(#pfm-orb2)"/>
+  <circle cx="400" cy="500" r="200" fill="url(#pfm-orb1)" opacity="0.5"/>
+  <g opacity="0.85">
+    <polygon points="120,320 150,335 150,365 120,380 90,365 90,335" fill="url(#pfm-top)"/>
+    <polygon points="90,335 120,320 120,350 90,365" fill="url(#pfm-left)"/>
+    <polygon points="120,320 150,335 150,365 120,350" fill="url(#pfm-right)"/>
+    <polygon points="180,350 210,365 210,395 180,410 150,395 150,365" fill="url(#pfm-top)"/>
+    <polygon points="150,365 180,350 180,380 150,395" fill="url(#pfm-left)"/>
+    <polygon points="180,350 210,365 210,395 180,380" fill="url(#pfm-right)"/>
+    <polygon points="60,350 90,365 90,395 60,410 30,395 30,365" fill="url(#pfm-top)"/>
+    <polygon points="30,365 60,350 60,380 30,395" fill="url(#pfm-left)"/>
+    <polygon points="60,350 90,365 90,395 60,380" fill="url(#pfm-right)"/>
+    <polygon points="120,380 150,395 150,425 120,440 90,425 90,395" fill="url(#pfm-top)"/>
+    <polygon points="90,395 120,380 120,410 90,425" fill="url(#pfm-left)"/>
+    <polygon points="120,380 150,395 150,425 120,410" fill="url(#pfm-right)"/>
+    <polygon points="240,320 265,332.5 265,357.5 240,370 215,357.5 215,332.5" fill="url(#pfm-glow-top)"/>
+    <polygon points="215,332.5 240,320 240,345 215,357.5" fill="url(#pfm-glow-left)"/>
+    <polygon points="240,320 265,332.5 265,357.5 240,345" fill="url(#pfm-glow-right)"/>
+    <polygon points="240,320 265,332.5 265,357.5 240,370 215,357.5 215,332.5" fill="none" stroke="#4d7fff" stroke-width="0.8" opacity="0.6"/>
+  </g>
+  <g opacity="0.9">
+    <polygon points="620,280 660,300 660,340 620,360 580,340 580,300" fill="url(#pfm-top)"/>
+    <polygon points="580,300 620,280 620,320 580,340" fill="url(#pfm-left)"/>
+    <polygon points="620,280 660,300 660,340 620,320" fill="url(#pfm-right)"/>
+    <polygon points="700,320 740,340 740,380 700,400 660,380 660,340" fill="url(#pfm-top)"/>
+    <polygon points="660,340 700,320 700,360 660,380" fill="url(#pfm-left)"/>
+    <polygon points="700,320 740,340 740,380 700,360" fill="url(#pfm-right)"/>
+    <polygon points="540,320 580,340 580,380 540,400 500,380 500,340" fill="url(#pfm-top)"/>
+    <polygon points="500,340 540,320 540,360 500,380" fill="url(#pfm-left)"/>
+    <polygon points="540,320 580,340 580,380 540,360" fill="url(#pfm-right)"/>
+    <polygon points="620,360 660,380 660,420 620,440 580,420 580,380" fill="url(#pfm-top)"/>
+    <polygon points="580,380 620,360 620,400 580,420" fill="url(#pfm-left)"/>
+    <polygon points="620,360 660,380 660,420 620,400" fill="url(#pfm-right)"/>
+    <polygon points="620,200 660,220 660,260 620,280 580,260 580,220" fill="url(#pfm-top)"/>
+    <polygon points="580,220 620,200 620,240 580,260" fill="url(#pfm-left)"/>
+    <polygon points="620,200 660,220 660,260 620,240" fill="url(#pfm-right)"/>
+    <polygon points="780,280 810,295 810,325 780,340 750,325 750,295" fill="url(#pfm-glow-top)"/>
+    <polygon points="750,295 780,280 780,310 750,325" fill="url(#pfm-glow-left)"/>
+    <polygon points="780,280 810,295 810,325 780,310" fill="url(#pfm-glow-right)"/>
+    <polygon points="780,280 810,295 810,325 780,340 750,325 750,295" fill="none" stroke="#4d7fff" stroke-width="0.8" opacity="0.5"/>
+  </g>
+  <g opacity="0.5">
+    <polygon points="280,240 295,247.5 295,262.5 280,270 265,262.5 265,247.5" fill="url(#pfm-top)"/>
+    <polygon points="265,247.5 280,240 280,255 265,262.5" fill="url(#pfm-left)"/>
+    <polygon points="280,240 295,247.5 295,262.5 280,255" fill="url(#pfm-right)"/>
+    <polygon points="520,480 537.5,488.75 537.5,506.25 520,515 502.5,506.25 502.5,488.75" fill="url(#pfm-top)"/>
+    <polygon points="502.5,488.75 520,480 520,497.5 502.5,506.25" fill="url(#pfm-left)"/>
+    <polygon points="520,480 537.5,488.75 537.5,506.25 520,497.5" fill="url(#pfm-right)"/>
+    <polygon points="380,560 392.5,566.25 392.5,578.75 380,585 367.5,578.75 367.5,566.25" fill="url(#pfm-top)"/>
+    <polygon points="367.5,566.25 380,560 380,572.5 367.5,578.75" fill="url(#pfm-left)"/>
+    <polygon points="380,560 392.5,566.25 392.5,578.75 380,572.5" fill="url(#pfm-right)"/>
+    <polygon points="480,200 494,207 494,221 480,228 466,221 466,207" fill="url(#pfm-top)"/>
+    <polygon points="466,207 480,200 480,214 466,221" fill="url(#pfm-left)"/>
+    <polygon points="480,200 494,207 494,221 480,214" fill="url(#pfm-right)"/>
+  </g>
+  <g stroke="#2563eb" stroke-width="0.6" fill="none" opacity="0.1">
+    <line x1="0" y1="720" x2="300" y2="850"/>
+    <line x1="100" y1="720" x2="400" y2="850"/>
+    <line x1="200" y1="720" x2="500" y2="850"/>
+    <line x1="300" y1="720" x2="600" y2="850"/>
+    <line x1="400" y1="720" x2="700" y2="850"/>
+    <line x1="500" y1="720" x2="800" y2="850"/>
+    <line x1="0" y1="820" x2="200" y2="740"/>
+    <line x1="0" y1="880" x2="200" y2="800"/>
+    <line x1="0" y1="950" x2="200" y2="870"/>
+    <line x1="250" y1="950" x2="450" y2="870"/>
+    <line x1="500" y1="950" x2="700" y2="870"/>
+  </g>
+  <g stroke="#4d7fff" stroke-width="1" fill="none" opacity="0.15" stroke-linecap="round">
+    <line x1="210" y1="365" x2="240" y2="345"/>
+    <line x1="150" y1="395" x2="180" y2="380"/>
+    <line x1="90" y1="395" x2="120" y2="380"/>
+    <line x1="660" y1="320" x2="700" y2="340"/>
+    <line x1="580" y1="320" x2="620" y2="340"/>
+    <line x1="620" y1="280" x2="620" y2="320"/>
+    <line x1="660" y1="380" x2="780" y2="310"/>
+  </g>
+  <g fill="#4d7fff" opacity="0.25">
+    <circle cx="320" cy="260" r="2"/>
+    <circle cx="360" cy="320" r="1.5"/>
+    <circle cx="280" cy="460" r="2.5"/>
+    <circle cx="520" cy="400" r="2"/>
+    <circle cx="600" cy="280" r="1.5"/>
+    <circle cx="720" cy="460" r="2"/>
+    <circle cx="780" cy="240" r="1.5"/>
+    <circle cx="80" cy="380" r="2"/>
+    <circle cx="420" cy="200" r="1.5"/>
+    <circle cx="500" cy="560" r="2"/>
+  </g>
+  <g stroke="#2563eb" stroke-width="0.8" fill="none" opacity="0.12">
+    <polygon points="380,180 400,191.5 400,214.5 380,226 360,214.5 360,191.5"/>
+    <polygon points="580,580 600,591.5 600,614.5 580,626 560,614.5 560,591.5"/>
+    <polygon points="460,480 475,488.75 475,506.25 460,515 445,506.25 445,488.75"/>
+  </g>
+</svg>

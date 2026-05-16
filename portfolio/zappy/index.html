@@ -261,7 +261,12 @@
 
     <!-- ==================== HERO BANNER ==================== -->
     <section class="cf-pp-banner cf-pp-banner--light" style="position:relative;overflow:hidden;background:transparent;">
-      <div class="cf-pp-banner__bg" style="position:absolute;inset:0;z-index:0;"><img src="../../cf-images/cf_banner_zappy.svg" alt="" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+      <div class="cf-pp-banner__bg" style="position:absolute;inset:0;z-index:0;">
+        <picture style="display:block;width:100%;height:100%;">
+          <source media="(max-width: 767px)" srcset="../../cf-images/cf_banner_zappy_mobile.svg">
+          <img src="../../cf-images/cf_banner_zappy.svg" alt="" style="width:100%;height:100%;object-fit:cover;display:block;">
+        </picture>
+      </div>
       <div class="padding-global" style="position:relative;z-index:1;">
         <a href="../../portfolio/index.html" class="cf-pp-back-top">
           <span class="arrow">&larr;</span> Back

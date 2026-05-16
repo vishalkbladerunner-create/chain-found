@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="zpmBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#06182E"/>
+      <stop offset="55%" stop-color="#0B2954"/>
+      <stop offset="100%" stop-color="#0a1520"/>
+    </linearGradient>
+    <linearGradient id="zpmBolt" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2251ff"/>
+      <stop offset="100%" stop-color="#4d7fff"/>
+    </linearGradient>
+    <linearGradient id="zpmBolt2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4d7fff"/>
+      <stop offset="100%" stop-color="#6b9fff"/>
+    </linearGradient>
+    <radialGradient id="zpmFlare" cx="0.78" cy="0.4" r="0.45">
+      <stop offset="0%" stop-color="#2251ff" stop-opacity="0.55"/>
+      <stop offset="60%" stop-color="#4d7fff" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#4d7fff" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="zpmGrid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M60 0 L0 0 0 60" fill="none" stroke="#4d7fff" stroke-opacity="0.06" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="1000" fill="url(#zpmBg)"/>
+  <rect width="800" height="1000" fill="url(#zpmGrid)"/>
+  <rect width="800" height="1000" fill="url(#zpmFlare)"/>
+  <g fill="none" stroke="#FFFFFF" stroke-opacity="0.06">
+    <rect x="80" y="220" width="90" height="130" rx="10" transform="rotate(-12 125 285)"/>
+    <rect x="200" y="280" width="90" height="130" rx="10" transform="rotate(8 245 345)"/>
+    <rect x="340" y="220" width="90" height="130" rx="10" transform="rotate(-4 385 285)"/>
+    <rect x="120" y="620" width="90" height="130" rx="10" transform="rotate(15 165 685)"/>
+    <rect x="260" y="660" width="90" height="130" rx="10" transform="rotate(-8 305 725)"/>
+    <rect x="460" y="720" width="90" height="130" rx="10" transform="rotate(6 505 785)"/>
+  </g>
+  <g fill="none" stroke-linejoin="miter" stroke-linecap="round">
+    <path d="M-60 280 L 180 400 L 140 480 L 360 640 L 300 760 L 480 920"
+          stroke="url(#zpmBolt)" stroke-width="3" opacity="0.85"/>
+    <path d="M60 -60 L 320 240 L 240 360 L 480 620 L 400 780 L 680 1020"
+          stroke="url(#zpmBolt2)" stroke-width="2.5" opacity="0.75"/>
+    <path d="M500 -40 L 680 320 L 580 460 L 780 720 L 700 900 L 880 1100"
+          stroke="url(#zpmBolt)" stroke-width="2" opacity="0.6"/>
+  </g>
+  <g fill="#2251ff">
+    <circle cx="180" cy="400" r="4" opacity="0.9"/>
+    <circle cx="360" cy="640" r="3" opacity="0.8"/>
+    <circle cx="480" cy="620" r="3" opacity="0.7"/>
+    <circle cx="680" cy="320" r="3" opacity="0.7"/>
+    <circle cx="780" cy="720" r="3" opacity="0.7"/>
+  </g>
+  <g fill="#4d7fff">
+    <circle cx="320" cy="240" r="3" opacity="0.8"/>
+    <circle cx="480" cy="920" r="2.5" opacity="0.6"/>
+    <circle cx="580" cy="460" r="2.5" opacity="0.7"/>
+  </g>
+</svg>

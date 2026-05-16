@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="oxmBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a1428"/>
+      <stop offset="50%" stop-color="#0d1f3a"/>
+      <stop offset="100%" stop-color="#0a1a30"/>
+    </linearGradient>
+    <radialGradient id="oxmGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#2251ff" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#2251ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="oxmRing" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4d7fff" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#2251ff" stop-opacity="0.3"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#oxmBg)"/>
+  <ellipse cx="400" cy="500" rx="400" ry="300" fill="url(#oxmGlow)"/>
+  <g fill="none" stroke="url(#oxmRing)" stroke-width="1.2" opacity="0.6">
+    <ellipse cx="400" cy="500" rx="160" ry="115"/>
+    <ellipse cx="400" cy="500" rx="225" ry="160"/>
+    <ellipse cx="400" cy="500" rx="290" ry="205"/>
+    <ellipse cx="400" cy="500" rx="355" ry="250"/>
+    <ellipse cx="400" cy="500" rx="420" ry="295"/>
+  </g>
+  <g fill="none" stroke="#4d7fff" stroke-width="0.8" opacity="0.25" transform="rotate(30 400 500)">
+    <ellipse cx="400" cy="500" rx="145" ry="210"/>
+    <ellipse cx="400" cy="500" rx="210" ry="275"/>
+    <ellipse cx="400" cy="500" rx="275" ry="340"/>
+  </g>
+  <g stroke="#4d7fff" stroke-width="0.6" fill="none" opacity="0.2">
+    <line x1="400" y1="500" x2="120" y2="200"/>
+    <line x1="400" y1="500" x2="680" y2="200"/>
+    <line x1="400" y1="500" x2="120" y2="800"/>
+    <line x1="400" y1="500" x2="680" y2="800"/>
+    <line x1="400" y1="500" x2="400" y2="80"/>
+    <line x1="400" y1="500" x2="400" y2="920"/>
+    <line x1="400" y1="500" x2="200" y2="500"/>
+    <line x1="400" y1="500" x2="600" y2="500"/>
+  </g>
+  <path d="M 160 220 Q 400 100 640 220" fill="none" stroke="#4d7fff" stroke-width="1" opacity="0.15"/>
+  <path d="M 80 500 Q 400 330 720 500" fill="none" stroke="#4d7fff" stroke-width="1" opacity="0.12"/>
+  <path d="M 160 780 Q 400 900 640 780" fill="none" stroke="#4d7fff" stroke-width="1" opacity="0.15"/>
+  <g fill="none" stroke="#4d7fff" stroke-width="0.8" opacity="0.3">
+    <polygon points="200,300 215,308 215,325 200,333 185,325 185,308"/>
+    <polygon points="600,650 615,658 615,675 600,683 585,675 585,658"/>
+    <polygon points="130,700 145,708 145,725 130,733 115,725 115,708"/>
+  </g>
+  <g fill="#4d7fff" opacity="0.4">
+    <circle cx="140" cy="180" r="3"/>
+    <circle cx="165" cy="160" r="2"/>
+    <circle cx="125" cy="205" r="2.5"/>
+    <circle cx="660" cy="780" r="3"/>
+    <circle cx="685" cy="760" r="2"/>
+    <circle cx="645" cy="805" r="2.5"/>
+  </g>
+  <g stroke="#2251ff" stroke-width="0.4" fill="none" opacity="0.06">
+    <line x1="0" y1="330" x2="800" y2="330"/>
+    <line x1="0" y1="670" x2="800" y2="670"/>
+    <line x1="200" y1="0" x2="200" y2="1000"/>
+    <line x1="600" y1="0" x2="600" y2="1000"/>
+  </g>
+  <circle cx="400" cy="500" r="4" fill="#4d7fff" opacity="0.6"/>
+  <circle cx="400" cy="500" r="12" fill="none" stroke="#4d7fff" stroke-width="0.8" opacity="0.3"/>
+  <circle cx="400" cy="500" r="24" fill="none" stroke="#4d7fff" stroke-width="0.6" opacity="0.15"/>
+</svg>

@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bdm-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFF6D4"/>
+      <stop offset="55%" stop-color="#FFE066"/>
+      <stop offset="100%" stop-color="#FFB347"/>
+    </linearGradient>
+    <radialGradient id="bdm-spot" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="bdm-halo" cx="0.5" cy="0.5" r="0.55">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.7"/>
+      <stop offset="60%" stop-color="#FFFFFF" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <g id="bdm-duck">
+      <ellipse cx="60" cy="78" rx="52" ry="40" fill="currentColor"/>
+      <circle cx="92" cy="46" r="30" fill="currentColor"/>
+      <path d="M118,44 Q138,46 142,52 Q138,60 118,58 Z" fill="#FF8A2A"/>
+      <circle cx="100" cy="40" r="4.2" fill="#1A1A1A"/>
+      <path d="M52,82 Q72,98 96,90 Q78,108 52,102 Z" fill="rgba(0,0,0,0.07)"/>
+    </g>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bdm-bg)"/>
+  <g fill="none" stroke="rgba(255,255,255,0.45)" stroke-width="1.5">
+    <circle cx="580" cy="500" r="130"/>
+    <circle cx="580" cy="500" r="200"/>
+    <circle cx="580" cy="500" r="280"/>
+    <circle cx="580" cy="500" r="370"/>
+    <circle cx="580" cy="500" r="470"/>
+  </g>
+  <ellipse cx="580" cy="500" rx="320" ry="270" fill="url(#bdm-halo)"/>
+  <ellipse cx="350" cy="380" rx="360" ry="220" fill="url(#bdm-spot)"/>
+  <g stroke="rgba(45,108,235,0.18)" stroke-width="1.2" fill="none">
+    <path d="M0,920 Q150,900 300,920 T600,920 T800,920"/>
+    <path d="M0,955 Q150,940 300,955 T600,955 T800,955"/>
+  </g>
+  <g color="#FFD93B" opacity="0.18">
+    <use href="#bdm-duck" transform="translate(50,580) scale(2.4) rotate(-8 60 60)"/>
+    <use href="#bdm-duck" transform="translate(650,100) scale(1.8) rotate(12 60 60)"/>
+  </g>
+  <g color="#FFC107" opacity="0.16">
+    <use href="#bdm-duck" transform="translate(200,60) scale(1.6) rotate(-18 60 60)"/>
+    <use href="#bdm-duck" transform="translate(550,720) scale(2.0) rotate(8 60 60)"/>
+  </g>
+  <g color="#FFB300" opacity="0.42">
+    <use href="#bdm-duck" transform="translate(120,220) scale(0.9) rotate(-12 60 60)"/>
+    <use href="#bdm-duck" transform="translate(380,600) scale(1.0) rotate(15 60 60)"/>
+    <use href="#bdm-duck" transform="translate(520,180) scale(0.85) rotate(-6 60 60)"/>
+    <use href="#bdm-duck" transform="translate(260,780) scale(0.7) rotate(22 60 60)"/>
+    <use href="#bdm-duck" transform="translate(40,800) scale(0.8) rotate(-20 60 60)"/>
+  </g>
+  <g color="#FFA000" opacity="0.7">
+    <use href="#bdm-duck" transform="translate(180,480) scale(0.5) rotate(8 60 60)"/>
+    <use href="#bdm-duck" transform="translate(340,320) scale(0.45) rotate(-14 60 60)"/>
+    <use href="#bdm-duck" transform="translate(460,720) scale(0.55) rotate(18 60 60)"/>
+    <use href="#bdm-duck" transform="translate(600,550) scale(0.4) rotate(-8 60 60)"/>
+    <use href="#bdm-duck" transform="translate(100,420) scale(0.38) rotate(-22 60 60)"/>
+    <use href="#bdm-duck" transform="translate(720,780) scale(0.5) rotate(10 60 60)"/>
+    <use href="#bdm-duck" transform="translate(760,320) scale(0.42) rotate(-10 60 60)"/>
+  </g>
+  <g fill="rgba(255,255,255,0.6)">
+    <circle cx="100" cy="140" r="3"/>
+    <circle cx="240" cy="480" r="2.5"/>
+    <circle cx="380" cy="180" r="3"/>
+    <circle cx="520" cy="420" r="2.5"/>
+    <circle cx="640" cy="300" r="3"/>
+    <circle cx="720" cy="820" r="2.5"/>
+    <circle cx="600" cy="220" r="3"/>
+    <circle cx="160" cy="700" r="2.5"/>
+    <circle cx="440" cy="90" r="3"/>
+    <circle cx="580" cy="820" r="2.5"/>
+  </g>
+</svg>

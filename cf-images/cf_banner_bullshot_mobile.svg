@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bsmBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0A1428"/>
+      <stop offset="55%" stop-color="#1A2B52"/>
+      <stop offset="100%" stop-color="#2A1810"/>
+    </linearGradient>
+    <linearGradient id="bsmTrail" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FF6B3D" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#FF6B3D" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#FFD89F" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="bsmTrail2" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FF3D6B" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#FFB089" stop-opacity="0.7"/>
+    </linearGradient>
+    <radialGradient id="bsmGlow" cx="0.85" cy="0.15" r="0.6">
+      <stop offset="0%" stop-color="#FFB089" stop-opacity="0.55"/>
+      <stop offset="60%" stop-color="#FF6B3D" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#FF6B3D" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="bsmGrid" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M80 0 L0 0 0 80" fill="none" stroke="#FFFFFF" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bsmBg)"/>
+  <rect width="800" height="1000" fill="url(#bsmGrid)"/>
+  <rect width="800" height="1000" fill="url(#bsmGlow)"/>
+  <g opacity="0.85">
+    <path d="M-60 1050 Q 320 800 500 500 T 860 -60" stroke="url(#bsmTrail)" stroke-width="3" fill="none" opacity="0.9"/>
+    <path d="M-60 1100 Q 360 820 540 460 T 880 -100" stroke="url(#bsmTrail2)" stroke-width="2" fill="none" opacity="0.65"/>
+    <path d="M-60 980 Q 280 760 480 380 T 860 -180" stroke="url(#bsmTrail)" stroke-width="1.5" fill="none" opacity="0.55"/>
+    <path d="M-60 1150 Q 400 880 580 480 T 920 0" stroke="url(#bsmTrail2)" stroke-width="1" fill="none" opacity="0.45"/>
+  </g>
+  <g fill="#FFD89F" opacity="0.7">
+    <circle cx="720" cy="220" r="3"/>
+    <circle cx="760" cy="160" r="2"/>
+    <circle cx="800" cy="110" r="2.5"/>
+    <circle cx="680" cy="280" r="2"/>
+    <circle cx="620" cy="350" r="1.5"/>
+  </g>
+  <g stroke="#3D6BFF" stroke-opacity="0.04" stroke-width="1">
+    <line x1="0" y1="250" x2="800" y2="250"/>
+    <line x1="0" y1="500" x2="800" y2="500"/>
+    <line x1="0" y1="750" x2="800" y2="750"/>
+  </g>
+</svg>
