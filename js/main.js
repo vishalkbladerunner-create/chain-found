@@ -269,6 +269,19 @@
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 
+  /* ---- Hero Video Fade-In ---- */
+  var heroVideo = document.querySelector('.hero__video');
+  if (heroVideo) {
+    function onVideoReady() {
+      heroVideo.classList.add('is-ready');
+    }
+    heroVideo.addEventListener('loadeddata', onVideoReady);
+    heroVideo.addEventListener('playing', onVideoReady);
+    if (heroVideo.readyState >= 2) {
+      onVideoReady();
+    }
+  }
+
   /* ---- Smooth Scroll for Anchor Links ---- */
   document.querySelectorAll('a[href^="#"]').forEach(function (a) {
     a.addEventListener('click', function (e) {
