@@ -11,7 +11,7 @@
 <body>
 
   <!-- ==================== HEADER ==================== -->
-  <header class="site-header" id="site-header">
+  <header class="site-header header--hero" id="site-header">
     <div class="site-header__inner">
       <div class="site-header__left">
         <button class="hamburger" id="hamburger-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mega-menu">
@@ -178,16 +178,15 @@
 
     <!-- ==================== HERO (Full-width video) ==================== -->
     <section class="hero">
-      <div class="hero__video-bg" style="background-image:url('./cf-images/cf_hero_ai.jpg')"></div>
+      <video class="hero__video" autoplay muted loop playsinline poster="./cf-images/cf_hero_ai.jpg">
+        <source src="./hero-video.mp4" type="video/mp4">
+      </video>
       <div class="hero__video-overlay"></div>
       <div class="hero__inner">
         <div class="hero__content">
+          <p class="hero__eyebrow">The Execution Layer for Token-Native Companies</p>
           <h1 class="hero__headline">What's your next brilliant move?</h1>
           <p class="hero__subheadline">Game-changing work. People-powered growth. At ChainFoundry, we help you think bigger, build stronger, and expand opportunity for all.</p>
-          <button class="hero__play-btn" aria-label="Play video">
-            <span class="hero__play-ring"></span>
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-          </button>
         </div>
       </div>
     </section>

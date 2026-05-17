@@ -260,8 +260,10 @@
     if (!header) return;
     if (y > 10) {
       header.style.boxShadow = '0 4px 20px rgba(0,0,0,0.15)';
+      header.classList.add('is-scrolled');
     } else {
       header.style.boxShadow = 'none';
+      header.classList.remove('is-scrolled');
     }
   }
   window.addEventListener('scroll', onScroll, { passive: true });
